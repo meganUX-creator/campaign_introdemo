@@ -8,30 +8,90 @@
 </head>
 
 <body>
-    <div class="lang-content lang-sc">
+    <div class="lang-content lang-sc active">
         <h1>注册礼金模板</h1>
         <div class="highlight-box">
+            <p>本章节主要用于定义用户参与注册活动的实名门槛、审核机制以及针对特定渠道（邀请码与代理）的差异化奖励配置。</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/registered_campain.jpg" alt="注册礼金配置预览">
-            <div class="img-caption">注册礼金活动后台配置界面</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/registered_campain.jpg" class="table-img" alt="注册礼金配置预览"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">配置项</th>
-                        <th>说明</th>
+                        <th style="width: 180px;">配置项</th>
+                        <th>功能概述</th>
+                        <th>操作说明与参数</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>实名限制</strong></td>
-                        <td>是否要求完成银行卡解绑或姓名验证后发放。</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">1. 额外达成条件设定</td>
+                        <td>此区块用于设定用户领取奖励前必须完成的基础帐户绑定动作，旨在提高帐户真实性与安全性。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>绑定电子钱包：</strong>勾选后，用户须在个人中心完成电子钱包绑定方可参与。</li>
+                                <li><strong>绑定银行卡：</strong>勾选后，系统将校验用户是否已绑定有效的银行帐户。</li>
+                                <li><strong>绑定虚拟币钱包：</strong>勾选后，用户需完成加密货币钱包地址的关联设定。</li>
+                            </ul>
+                            <strong>注意：</strong>建议至少勾选一项以确保奖金发放路径通畅。
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>首存关联</strong></td>
-                        <td>部分注册模板可配置为注册后首次充值触发。</td>
+                        <td style="font-weight: bold; background-color: #f0fdf4;">2. 审核方式配置</td>
+                        <td>定义系统对于奖金领取请求的处理逻辑，可选择全人工过滤或系统自动化处理以提升效率。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>人工审核：</strong>所有用户领取奖励的请求均需由后台人员逐一核对确认。</li>
+                                <li><strong>自动审核：</strong>系统将根据预设逻辑自动核发奖金。<br>
+                                    - <strong>自动审核门槛 (CNY)：</strong>请输入特定金额。当奖金金额大于或等于此门槛时，系统将自动转为「手动审核」，以防止大额资金异常流出。若输入
+                                    0，则代表所有奖金领取皆需经过手动审核。
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fefce8;">3. 预设奖金设置</td>
+                        <td>针对未符合「特定邀请码」或「指定代理」条件的普通用户，设定其可获得的基础奖金标准。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>预设奖金：</strong>请输入单次领取的标准奖励金额。</li>
+                                <li><strong>预设奖金数量：</strong>设定此活动每日或总计提供的基础奖项名额总数。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #faf5ff;">4. 邀请码注册来源设定</td>
+                        <td>此区域允许针对特定推广渠道（透过特定邀请码注册的用户）设定差异化的激励方案。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>新增：</strong>增加一组新的邀请码规则。</li>
+                                <li><strong>邀请码：</strong>精确输入需要进行特殊配置的邀请代码。</li>
+                                <li><strong>奖金：</strong>设定该渠道用户专享的奖金金额（通常高于预设奖金）。</li>
+                                <li><strong>每日放量：</strong>设定该特定渠道每日可领取的奖金次数上限。</li>
+                                <li><strong>备注 / 删除：</strong>填写此规则的用途，或点击右侧删除按钮移除该渠道特殊规则。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fdf2f8;">5. 指定代理配置</td>
+                        <td>针对特定代理商旗下的用户进行精准奖励配置，便于管理不同代理线的活动力度。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>新增 / 代理帐号：</strong>开启新的代理配置列，并输入系统内已存在的代理商识别帐号。</li>
+                                <li><strong>奖金：</strong>设定归属于该代理下用户的专属奖金额度。</li>
+                                <li><strong>每日放量：</strong>限制该代理线每日可产出的最高奖励次数。</li>
+                                <li><strong>备注 / 删除：</strong>记录该代理的合作模式，或移除特定代理的特殊活动权限。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ 后续步骤：</strong> 完成上述「活动条件」设定后，请点击页面右上角的「下一步」，进入「风控设定」环节，以确保活动运行的安全性。
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -41,28 +101,111 @@
     <div class="lang-content lang-en">
         <h1>Registration Bonus Template</h1>
         <div class="highlight-box">
-            <p>Experience funds or welcome packs issued to new registrants, focusing on new user activation.</p>
+            <p>This section is mainly used to define the KYC thresholds, approval mechanisms, and differentiated reward
+                configurations for specific channels (invitation codes and agents).</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/registered_campain.jpg" alt="Registration Bonus Configuration Preview">
-            <div class="img-caption">Registration Bonus Activity Backend Configuration Interface</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/registered_campain.jpg" class="table-img" alt="Registration Bonus Configuration Preview"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Config Item</th>
-                        <th>Description</th>
+                        <th style="width: 180px;">Configuration Item</th>
+                        <th>Function Overview</th>
+                        <th>Operation Instructions & Parameters</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>KYC Restrictions</strong></td>
-                        <td>Option to require bank card binding or name verification before distribution.</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">1. Additional Fulfillment Conditions
+                        </td>
+                        <td>Used to set the basic account binding actions that users must complete before claiming
+                            rewards, aimed at improving account authenticity and security.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Bind e-Wallet:</strong> When checked, users must complete e-wallet binding
+                                    in the personal center.</li>
+                                <li><strong>Bind Bank Card:</strong> When checked, the system will verify whether the
+                                    user has bound a valid bank account.</li>
+                                <li><strong>Bind Crypto Wallet:</strong> When checked, users need to complete the crypto
+                                    wallet address association.</li>
+                            </ul>
+                            <strong>Note:</strong> It is recommended to check at least one to ensure smooth bonus
+                            distribution.
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>First Deposit Link</strong></td>
-                        <td>Some registration templates can be triggered by the first deposit after signup.</td>
+                        <td style="font-weight: bold; background-color: #f0fdf4;">2. Approval Mechanism</td>
+                        <td>Defines the system's processing logic for bonus claim requests; you can choose manual
+                            filtering or automated processing to improve efficiency.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Manual Approval:</strong> All user reward claim requests need to be checked
+                                    and confirmed one by one by backend staff.</li>
+                                <li><strong>Auto Approval:</strong> The system will automatically issue bonuses based on
+                                    logic.<br>
+                                    - <strong>Auto Approval Threshold (CNY):</strong> Enter a specific amount. When the
+                                    bonus amount is ≥ this threshold, the system automatically switches to "manual
+                                    approval" to prevent abnormal outflow of large funds. If 0 is entered, all claims
+                                    require manual approval.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fefce8;">3. Default Bonus Setting</td>
+                        <td>Sets the basic bonus standard available to ordinary users who do not meet the "specific
+                            invitation code" or "designated agent" conditions.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Default Bonus:</strong> Enter the standard reward amount for a single claim.
+                                </li>
+                                <li><strong>Default Bonus Quantity:</strong> Set the total number of basic reward quotas
+                                    provided daily or entirely for this activity.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #faf5ff;">4. Invitation Code Source Setting</td>
+                        <td>Allows setting differentiated incentive plans for specific promotional channels (users
+                            registering via specific invitation codes).</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Add / Invitation Code:</strong> Add a new rule and precisely enter the code
+                                    requiring special configuration.</li>
+                                <li><strong>Bonus:</strong> Set the exclusive bonus amount for users of this channel
+                                    (usually higher than the default).</li>
+                                <li><strong>Daily Quota:</strong> Set the upper limit on the number of bonus claims
+                                    allowed per day for this specific channel.</li>
+                                <li><strong>Remarks / Delete:</strong> Note the purpose of this rule, or remove the
+                                    channel-specific rule.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fdf2f8;">5. Designated Agent Configuration</td>
+                        <td>Precise reward configuration for users under specific agents, facilitating the management of
+                            activity strength across different agent downlines.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Add / Agent Account:</strong> Start a new configuration row and enter an
+                                    existing agent identification account.</li>
+                                <li><strong>Bonus / Daily Quota:</strong> Set the exclusive bonus amount and the maximum
+                                    daily reward frequency for users under this agent.</li>
+                                <li><strong>Remarks / Delete:</strong> Record the agent's cooperation mode, or remove
+                                    their special activity permissions.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ Next Step:</strong> After completing the "Activity Conditions" settings, please
+                            click "Next Step" in the top right corner to proceed to the "Risk Control Settings" step to
+                            ensure activity security.
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -72,29 +215,109 @@
     <div class="lang-content lang-vn">
         <h1>Mẫu tiền thưởng đăng ký</h1>
         <div class="highlight-box">
-            <p>Tiền trải nghiệm hoặc gói chào mừng được phát cho người dùng mới đăng ký, tập trung vào việc kích hoạt
-                người dùng mới.</p>
+            <p>Phần này chủ yếu được sử dụng để xác định các ngưỡng KYC tham gia hoạt động, cơ chế phê duyệt và cấu hình
+                phần thưởng khác biệt cho các kênh cụ thể (mã mời và đại lý).</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/registered_campain.jpg" alt="Xem trước cấu hình Tiền thưởng đăng ký">
-            <div class="img-caption">Giao diện cấu hình Backend cho hoạt động Tiền thưởng đăng ký</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/registered_campain.jpg" class="table-img" alt="Xem trước cấu hình Tiền thưởng đăng ký"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Mục cấu hình</th>
-                        <th>Mô tả</th>
+                        <th style="width: 180px;">Mục Cấu Hình</th>
+                        <th>Tổng Quan Chức Năng</th>
+                        <th>Hướng Dẫn Thao Tác & Thông Số</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Hạn chế KYC</strong></td>
-                        <td>Yêu cầu hoàn thành liên kết thẻ ngân hàng hoặc xác thực họ tên trước khi phát thưởng.</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">1. Điều Kiện Hoàn Thành Bổ Sung</td>
+                        <td>Được sử dụng để thiết lập các hành động liên kết tài khoản cơ bản mà người dùng phải hoàn
+                            thành trước khi nhận phần thưởng, nhằm cải thiện tính xác thực và bảo mật của tài khoản.
+                        </td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Liên Kết Ví Điện Tử:</strong> Yêu cầu người dùng hoàn tất liên kết ví điện
+                                    tử trong trung tâm cá nhân.</li>
+                                <li><strong>Liên Kết Thẻ Ngân Hàng:</strong> Hệ thống sẽ xác minh xem người dùng đã liên
+                                    kết thẻ ngân hàng hợp lệ hay chưa.</li>
+                                <li><strong>Liên Kết Ví Tiền Ảo:</strong> Yêu cầu người dùng hoàn tất việc thiết lập địa
+                                    chỉ ví tiền điện tử.</li>
+                            </ul>
+                            <strong>Lưu ý:</strong> Nên chọn ít nhất một để đảm bảo phần thưởng được phát thuận lợi.
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>Liên kết nạp đầu</strong></td>
-                        <td>Một số mẫu đăng ký có thể cấu hình để kích hoạt khi nạp tiền lần đầu sau khi đăng ký.</td>
+                        <td style="font-weight: bold; background-color: #f0fdf4;">2. Cơ Chế Phê Duyệt</td>
+                        <td>Xác định logic xử lý của hệ thống đối với các yêu cầu nhận tiền thưởng; có thể chọn lọc thủ
+                            công hoặc hệ thống xử lý tự động để nâng cao hiệu suất.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Phê Duyệt Thủ Công:</strong> Tất cả yêu cầu nhận phần thưởng của người dùng
+                                    cần được nhân viên backend kiểm tra từng yêu cầu.</li>
+                                <li><strong>Phê Duyệt Tự Động:</strong> Hệ thống sẽ tự động cấp tiền thưởng dựa trên
+                                    logic.<br>
+                                    - <strong>Ngưỡng Duyệt Tự Động (CNY):</strong> Nhập một số tiền. Khi tiền thưởng ≥
+                                    ngưỡng này, hệ thống sẽ tự động chuyển sang "thủ công" để ngăn dòng tiền lớn bất
+                                    thường. Nhập 0 nghĩa là mọi yêu cầu đều cần duyệt thủ công.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fefce8;">3. Thiết Lập Tiền Thưởng Mặc Định</td>
+                        <td>Thiết lập tiêu chuẩn tiền thưởng cơ bản dành cho người dùng thông thường không đáp ứng các
+                            điều kiện "mã mời cụ thể" hoặc "đại lý được chỉ định".</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Tiền Thưởng Mặc Định:</strong> Nhập số tiền thưởng tiêu chuẩn cho một lần
+                                    nhận.</li>
+                                <li><strong>Số Lượng Tiền Thưởng:</strong> Đặt tổng số hạn ngạch phần thưởng cơ bản được
+                                    cung cấp hàng ngày hoặc tổng cộng cho hoạt động này.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #faf5ff;">4. Cấu Hình Nguồn Mã Mời</td>
+                        <td>Cho phép thiết lập các kế hoạch ưu đãi khác nhau cho các kênh quảng bá cụ thể (người dùng
+                            đăng ký qua mã mời cụ thể).</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Thêm / Mã Mời:</strong> Thêm quy tắc mới và nhập chính xác mã cần cấu hình
+                                    đặc biệt.</li>
+                                <li><strong>Tiền Thưởng:</strong> Thiết lập số tiền thưởng dành riêng cho người dùng của
+                                    kênh này (thường cao hơn mặc định).</li>
+                                <li><strong>Số Lượng Hàng Ngày:</strong> Đặt giới hạn tối đa số lần nhận tiền thưởng mỗi
+                                    ngày cho kênh này.</li>
+                                <li><strong>Ghi Chú / Xóa:</strong> Ghi lại mục đích của quy tắc này, hoặc xóa bỏ quy
+                                    tắc đó.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #fdf2f8;">5. Cấu Hình Đại Lý Chỉ Định</td>
+                        <td>Cấu hình phần thưởng chính xác cho người dùng dưới các đại lý cụ thể, tạo điều kiện quản lý
+                            mức độ hoạt động trên các tuyến đại lý khác nhau.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Thêm / Tài Khoản Đại Lý:</strong> Mở một hàng cấu hình mới và nhập tài khoản
+                                    tài khoản đại lý đã có trong hệ thống.</li>
+                                <li><strong>Tiền Thưởng / Số Lượng Mỗi Ngày:</strong> Đặt số tiền thưởng độc quyền và
+                                    tần suất tối đa hàng ngày cho người dùng dưới đại lý này.</li>
+                                <li><strong>Ghi Chú / Xóa:</strong> Ghi lại phương thức hợp tác của đại lý đó, hoặc gỡ
+                                    bỏ quyền lợi hoạt động của họ.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ Bước Tiếp Theo:</strong> Sau khi hoàn tất cài đặt "Điều Kiện Hoạt Động", vui lòng
+                            nhấp vào "Bước Tiếp Theo" ở góc trên bên phải để chuyển sang bước "Cài Đặt Kiểm Soát Rủi Ro"
+                            nhằm đảm bảo an toàn cho hoạt động.
+                        </td>
                     </tr>
                 </tbody>
             </table>

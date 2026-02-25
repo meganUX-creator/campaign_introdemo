@@ -8,34 +8,73 @@
 </head>
 
 <body>
-    <div class="lang-content lang-sc">
+    <div class="lang-content lang-sc active">
         <h1>连续性活动模板</h1>
         <div class="highlight-box">
-            <p>针对需要用户在指定周期内（如连续7天）满足特定条件（如每日充值/流水）的活动类型。</p>
+            <p>针对需要用户在指定周期内（如连续数天）满足特定条件（如每日充值/流水）的活动类型。此模板主要用于建立长期活跃度与留存。</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/routin.jpg" alt="连续性活动配置预览">
-            <div class="img-caption">连续性活动后台配置界面</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/routin.jpg" class="table-img" alt="连续性活动配置预览"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 150px;">配置项</th>
-                        <th>说明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>结算周期</strong></td>
-                        <td>支持自然日、自然月或自定义周期结算。</td>
-                    </tr>
-                    <tr>
-                        <td><strong>连续性要求</strong></td>
-                        <td>若用户中断连续天数，可设置是否重置进度或保留进度。</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="flow-section" style="margin-top: 2rem;">
+            <h2>活动模板配置说明</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 180px;">配置区块</th>
+                            <th style="width: 200px;">设定项</th>
+                            <th>详细功能描述与操作说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="1" style="font-weight: bold; background-color: #f8fafc;">1. 游戏范围限定</td>
+                            <td style="font-weight: bold;">打码量限定游戏</td>
+                            <td>
+                                點擊「已選擇 <strong>N</strong> 個遊戲」按鈕，從系統路徑中勾選此活動認可的遊戲。
+                                <br>只有在這些指定遊戲中的投注才會被記為「有效流水（打碼量）」。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" style="font-weight: bold; background-color: #f0fdf4;">2. 参数条件设置</td>
+                            <td style="font-weight: bold;">a-1. 设置基础门槛</td>
+                            <td>
+                                <ul class="flow-list">
+                                    <li><strong>充值金额：</strong> 用户在当周期（当天）所需达到的充值数字。</li>
+                                    <li><strong>打码量：</strong> 用户在指定游戏内需要完成的有效流水倍数或固定金额。</li>
+                                    <li><strong>总奖金额：</strong> 此天数达成后，用户可领取的奖励总值（通常对应下方獎項細節的各名次設定總和）。</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-2. 奖项配置细节</td>
+                            <td>
+                                点击「配置奖项」展開詳細清單：
+                                <ul class="flow-list">
+                                    <li><strong>名次：</strong> 設定不同等級的排名（如：第一名、第二名等）。</li>
+                                    <li><strong>选择奖项：</strong> 從下拉選單中挑選預設好的獎勵類型（如：現金、積分、或特定道具）。</li>
+                                    <li><strong>中獎人數 / 剩餘數量：</strong> 精確控管每個名次的獲獎名額與目前的庫存存量。</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-3. 逻辑扩展</td>
+                            <td>
+                                <strong>添加连续天数：</strong>
+                                点击下方「＋ 添加连续天数」按鈕，可以增加第 N 天的獎勵路徑。例如：可設定「連續 3 天充值且流水達標」後獲得額外大獎。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                                <strong>⚠️ 操作提示：</strong> 在配置每一天的獎勵時，請務必點擊右側「展開」確認細項。完成所有天數配置後，點擊右上角「下一步」進行數據保存。
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -43,64 +82,161 @@
         <h1>Continuous Activity Template</h1>
         <div class="highlight-box">
             <p>Designed for activities requiring users to meet specific conditions (e.g., daily deposit/turnover) within
-                a specified period (e.g., 7 consecutive days).</p>
+                a specified period. This template focuses on long-term engagement and retention.</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/routin.jpg" alt="Continuous Activity Configuration Preview">
-            <div class="img-caption">Continuous Activity Backend Configuration Interface</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/routin.jpg" class="table-img" alt="Continuous Activity Configuration Preview"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 150px;">Config Item</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Settlement Period</strong></td>
-                        <td>Supports natural day, natural month, or custom period settlement.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Continuity</strong></td>
-                        <td>Set whether progress resets or stays if the daily streak is broken.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="flow-section" style="margin-top: 2rem;">
+            <h2>Configuration Details</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 180px;">Configuration Block</th>
+                            <th style="width: 200px;">Setting Item</th>
+                            <th>Description & Instructions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="1" style="font-weight: bold; background-color: #f8fafc;">1. Game Scope</td>
+                            <td style="font-weight: bold;">Turnover Limited Games</td>
+                            <td>
+                                Click the "Selected <strong>N</strong> Games" button to choose which games count toward
+                                the activity requirement.
+                                <br>Only wagers placed in these designated games will be counted as "Valid Turnover".
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" style="font-weight: bold; background-color: #f0fdf4;">2. Parameters &
+                                Conditions</td>
+                            <td style="font-weight: bold;">a-1. Basic Threshold</td>
+                            <td>
+                                <ul class="flow-list">
+                                    <li><strong>Recharge:</strong> The deposit amount users must reach during that
+                                        specific day/period.</li>
+                                    <li><strong>Turnover:</strong> The required wagering amount or multiplier in
+                                        designated games.</li>
+                                    <li><strong>Total Prize:</strong> The total value level of rewards for reaching this
+                                        milestone.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-2. Prize Details</td>
+                            <td>
+                                Expand "Configure Prizes" to see detail settings:
+                                <ul class="flow-list">
+                                    <li><strong>Rank:</strong> Set different tiers (e.g., 1st, 2nd, etc.).</li>
+                                    <li><strong>Select Prize:</strong> Choose the type of reward (Cash, Points, Items).
+                                    </li>
+                                    <li><strong>Winners / Remaining:</strong> Manage the total quota of winners and
+                                        current inventory per rank.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-3. Cycle Expansion</td>
+                            <td>
+                                <strong>Add Consecutive Days:</strong>
+                                Click "+ Add Consecutive Days" to extend the activity duration path (e.g., setting
+                                special rewards for a 7-day streak).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                                <strong>⚠️ Tip:</strong> Always expand the day settings to verify details. Click "Next
+                                Step" to save after completing all days.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
     <div class="lang-content lang-vn">
         <h1>Mẫu hoạt động liên tục</h1>
         <div class="highlight-box">
-            <p>Dành cho các loại hoạt động yêu cầu người dùng đáp ứng các điều kiện cụ thể (ví dụ: nạp tiền/doanh thu
-                hàng ngày) trong một khoảng thời gian nhất định (ví dụ: 7 ngày liên tiếp).</p>
+            <p>Dành cho các loại hoạt động yêu cầu người dùng đáp ứng các điều kiện cụ thể (như nạp tiền/doanh thu hàng
+                ngày) trong một khoảng thời gian nhất định để xây dựng tính tích cực và giữ chân người dùng lâu dài.</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/routin.jpg" alt="Xem trước cấu hình hoạt động liên tục">
-            <div class="img-caption">Giao diện cấu hình Backend cho hoạt động liên tục</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/routin.jpg" class="table-img" alt="Xem trước cấu hình hoạt động liên tục"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 150px;">Mục cấu hình</th>
-                        <th>Mô tả</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Chu kỳ quyết toán</strong></td>
-                        <td>Hỗ trợ quyết toán theo ngày tự nhiên, tháng tự nhiên hoặc chu kỳ tùy chỉnh.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Yêu cầu liên tục</strong></td>
-                        <td>Thiết lập xem tiến trình có bị khởi động lại hay được giữ nguyên nếu người dùng ngắt quãng
-                            chuỗi liên tiếp.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="flow-section" style="margin-top: 2rem;">
+            <h2>Hướng dẫn chi tiết cấu hình</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 180px;">Khu vực cấu hình</th>
+                            <th style="width: 200px;">Mục thiết lập</th>
+                            <th>Mô tả chức năng & Hướng dẫn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="1" style="font-weight: bold; background-color: #f8fafc;">1. Phạm vi trò chơi
+                            </td>
+                            <td style="font-weight: bold;">Trò chơi giới hạn doanh thu</td>
+                            <td>
+                                Nhấp vào nút "Đã chọn <strong>N</strong> trò chơi" để chọn các trò chơi được công nhận.
+                                <br>Chỉ các cược đặt trong các trò chơi được chỉ định mới được tính là "Doanh thu hợp
+                                lệ".
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" style="font-weight: bold; background-color: #f0fdf4;">2. Thông số & Điều
+                                kiện</td>
+                            <td style="font-weight: bold;">a-1. Thiết lập ngưỡng cơ bản</td>
+                            <td>
+                                <ul class="flow-list">
+                                    <li><strong>Số tiền nạp:</strong> Số tiền nạp người dùng cần đạt được trong
+                                        ngày/giai đoạn đó.</li>
+                                    <li><strong>Doanh thu:</strong> Số lần hoặc số tiền cược yêu cầu hoàn thành trong
+                                        trò chơi chỉ định.</li>
+                                    <li><strong>Tổng tiền thưởng:</strong> Tổng giá trị phần thưởng người dùng có thể
+                                        nhận cho mốc này.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-2. Chi tiết giải thưởng</td>
+                            <td>
+                                Mở rộng "Cấu hình giải thưởng" để cài đặt chi tiết:
+                                <ul class="flow-list">
+                                    <li><strong>Thứ hạng:</strong> Thiết lập các cấp độ xếp hạng (ví dụ: hạng 1, hạng
+                                        2...).</li>
+                                    <li><strong>Chọn giải thưởng:</strong> Chọn loại phần thưởng (Tiền mặt, Điểm, Đạo
+                                        cụ).</li>
+                                    <li><strong>Số người trúng / Còn lại:</strong> Quản lý chỉ tiêu người thắng và kho
+                                        hàng hiện tại cho mỗi hạng.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">a-3. Mở rộng chu kỳ</td>
+                            <td>
+                                <strong>Thêm số ngày liên tiếp:</strong>
+                                Nhấp vào nút "+ Thêm số ngày liên tiếp" để tăng lộ trình phần thưởng (ví dụ: đặt thưởng
+                                lớn cho chuỗi 7 ngày).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                                <strong>⚠️ Lưu ý thao tác:</strong> Khi cấu hình phần thưởng mỗi ngày, hãy nhớ mở mục
+                                chi tiết để kiểm tra. Click "Bước tiếp theo" sau khi hoàn tất để lưu dữ liệu.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <script src="../../js/page-script.js"></script>

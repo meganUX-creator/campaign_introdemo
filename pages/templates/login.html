@@ -8,31 +8,61 @@
 </head>
 
 <body>
-    <div class="lang-content lang-sc">
+    <div class="lang-content lang-sc active">
         <h1>每天登入模板</h1>
         <div class="highlight-box">
-            <p>鼓励用户每日登录平台领取的签到式奖励，通常伴随阶梯式进度。</p>
+            <p>本章节主要说明在活动发布前的核心逻辑设定，包含审核方式的选择以及奖励阶梯的详细配置。请依照以下说明进行操作，以确保活动运行的准确性与安全性。</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/login.jpg" alt="每天登入配置预览">
-            <div class="img-caption">每天登入活动后台配置界面</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/login.jpg" class="table-img" alt="每天登入配置预览"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">配置项</th>
-                        <th>说明</th>
+                        <th style="width: 180px;">配置区块</th>
+                        <th>功能概述</th>
+                        <th>操作说明与参数</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>签到类型</strong></td>
-                        <td>普通签到（每日相同）或 阶梯签到（第N天奖励更高）。</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">一、 审核方式配置</td>
+                        <td>本区域提供活动参与资质的过滤机制。管理员可决定由系统自动判别或投入人工资源进行逐案复审，并可针对特定金额设定审核门槛，平衡运营效率与资金安全。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>人工审核：</strong>选中后，所有符合条件的申请均需经后台管理员手动核准后方可发放奖励。</li>
+                                <li><strong>自动审核：</strong>选中后，系统将根据预设规则自动触发奖励发放，无需人工干预。</li>
+                                <li><strong>金额门槛设定 (CNY)：</strong>在输入框中填写具体金额。若设定该值，当奖励金额超过此数字时，系统将强制转为人工审核。<br>
+                                    <em>*注意：填写 0 或留空可能代表所有金额均需经过手动审核（具体视系统底层逻辑而定，建议初次设定时进行测试）。</em>
+                                </li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>补签说明</strong></td>
-                        <td>可选是否允许用户消耗特定额度补领漏掉的天数。</td>
+                        <td style="font-weight: bold; background-color: #f0fdf4;">二、 奖励设定表</td>
+                        <td>透过表格化管理，精确控制活动的阶梯奖励结构。管理员可定义不同名次的获奖价值、名额限制以及抽奖机率，实现对活动成本（ROI）的精准控管。</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>奖项 (输入金额)：</strong>请输入该名次对应的奖励价值（如：现金金额或点数）。</li>
+                                <li><strong>中奖人数：</strong>设定该奖项总计可获奖的人数上限。</li>
+                                <li><strong>剩余数量：</strong>显示目前库存剩余可发放的名额（系统自动带入或手动初始化设定）。</li>
+                                <li><strong>概率设置：</strong>输入该奖项的中奖机率（建议以小数表示，如 0.1 代表 10%）。请确保所有奖项机率总和符合活动逻辑。</li>
+                                <li><strong>打码限制：</strong>设定获奖者领取奖励后需达到的流水（打码）要求。填写 0 表示不设限制，领取后即可提现。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ 注意事项：</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>保存进度：</strong>在切换至「风控设定」或「领取条件」前，请务必点击页面右上角的「下一步」以确保当前配置已成功暂存。</li>
+                                <li><strong>机率校对：</strong>调整奖励设定表后，请务必重新计算概率总和，避免因机率设定错误导致奖项发放异常。</li>
+                                <li><strong>预览检查：</strong>所有配置完成后，建议在最后的「送出预览」步骤中再次核对金额与人数限制。</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -42,28 +72,80 @@
     <div class="lang-content lang-en">
         <h1>Daily Login Template</h1>
         <div class="highlight-box">
-            <p>Check-in style rewards to encourage daily visits, often featuring tiered progression.</p>
+            <p>This section primarily explains the core logic settings before publishing an activity, including the
+                selection of approval methods and detailed configuration of reward tiers. Please follow the instructions
+                below to ensure the accuracy and security of the activity's operation.</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/login.jpg" alt="Daily Login Configuration Preview">
-            <div class="img-caption">Daily Login Activity Backend Configuration Interface</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/login.jpg" class="table-img" alt="Daily Login Configuration Preview"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Config Item</th>
-                        <th>Description</th>
+                        <th style="width: 180px;">Configuration Section</th>
+                        <th>Function Overview</th>
+                        <th>Operation Instructions & Parameters</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Check-in Type</strong></td>
-                        <td>Standard (same daily) or Tiered (higher rewards on Day N).</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">I. Approval Mechanism Configuration
+                        </td>
+                        <td>Provides a filtering mechanism for activity participation qualifications. Administrators can
+                            choose system auto-judgment or manual case-by-case review, and set an approval threshold for
+                            specific amounts to balance operational efficiency and financial security.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Manual Approval:</strong> When selected, all eligible applications require
+                                    manual approval by an admin before rewards are issued.</li>
+                                <li><strong>Auto Approval:</strong> When selected, the system automatically triggers
+                                    reward issuance based on preset rules without manual intervention.</li>
+                                <li><strong>Amount Threshold (CNY):</strong> Enter a specific amount. If set, when a
+                                    reward amount exceeds this figure, it is forced to manual approval.<br>
+                                    <em>*Note: Entering 0 or leaving it blank may mean all amounts require manual
+                                        approval (depends on underlying logic; testing during initial setup is
+                                        recommended).</em>
+                                </li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>Make-up Check-in</strong></td>
-                        <td>Option to allow users to spend a specific amount to claim missed days.</td>
+                        <td style="font-weight: bold; background-color: #f0fdf4;">II. Reward Settings Table</td>
+                        <td>Precisely control the tiered reward structure through tabular management. Define the reward
+                            value, quota limit, and winning probability for different ranks to accurately control the
+                            Return on Investment (ROI).</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Prize (Enter Amount):</strong> Enter the reward value corresponding to the
+                                    rank (e.g., cash amount or points).</li>
+                                <li><strong>Number of Winners:</strong> Set the maximum total number of people who can
+                                    win this prize.</li>
+                                <li><strong>Remaining Quantity:</strong> Displays the current inventory of quotas left
+                                    to distribute.</li>
+                                <li><strong>Probability Setting:</strong> Enter the winning probability for this prize
+                                    (decimals recommended, e.g., 0.1 equals 10%). Ensure the sum of all probabilities
+                                    fits the activity logic.</li>
+                                <li><strong>Turnover Requirement:</strong> Set the rollover (turnover) required after
+                                    claiming the reward. Entering 0 means no restriction (immediate withdrawal).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ Precautions:</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>Save Progress:</strong> Before switching to "Risk Control Settings" or
+                                    "Claim Conditions", be sure to click "Next Step" in the upper right to save the
+                                    current configuration.</li>
+                                <li><strong>Probability Check:</strong> After adjusting the table, be sure to
+                                    recalculate the sum of probabilities to avoid abnormal distribution.</li>
+                                <li><strong>Preview:</strong> After all configurations, it's recommended to double-check
+                                    amounts and quotas in the final "Submit Preview" step.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -73,29 +155,75 @@
     <div class="lang-content lang-vn">
         <h1>Mẫu đăng nhập hàng ngày</h1>
         <div class="highlight-box">
-            <p>Phần thưởng kiểu điểm danh để khuyến khích người dùng truy cập hàng ngày, thường đi kèm với tiến trình
-                phân tầng.</p>
+            <p>Phần này chủ yếu giải thích các thiết lập logic cốt lõi trước khi xuất bản một hoạt động, bao gồm việc
+                chọn phương thức phê duyệt và cấu hình chi tiết các bậc phần thưởng. Vui lòng làm theo các hướng dẫn bên
+                dưới để đảm bảo hoạt động diễn ra chính xác và an toàn.</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/login.jpg" alt="Xem trước cấu hình Đăng nhập hàng ngày">
-            <div class="img-caption">Giao diện cấu hình Backend cho hoạt động Đăng nhập hàng ngày</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/login.jpg" class="table-img" alt="Xem trước cấu hình Đăng nhập hàng ngày"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Mục cấu hình</th>
-                        <th>Mô tả</th>
+                        <th style="width: 180px;">Khu Vực Cấu Hình</th>
+                        <th>Tổng Quan Chức Năng</th>
+                        <th>Hướng Dẫn Thao Tác & Thông Số</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Loại điểm danh</strong></td>
-                        <td>Bình thường (giống nhau mỗi ngày) hoặc Phân tầng (phần thưởng ngày thứ N cao hơn).</td>
+                        <td style="font-weight: bold; background-color: #f8fafc;">I. Cấu Hình Cơ Chế Phê Duyệt</td>
+                        <td>Cung cấp cơ chế lọc điều kiện tham gia hoạt động. Quản trị viên có thể chọn hệ thống tự động
+                            đánh giá hoặc đánh giá thủ công từng trường hợp, và đặt ngưỡng phê duyệt cho các số tiền cụ
+                            thể để cân bằng hiệu quả và bảo mật.</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Phê Duyệt Thủ Công:</strong> Khi được chọn, tất cả đơn hợp lệ cần quản trị
+                                    viên phê duyệt thủ công trước khi phát thưởng.</li>
+                                <li><strong>Phê Duyệt Tự Động:</strong> Khi được chọn, hệ thống tự động phát thưởng dựa
+                                    trên quy tắc đặt trước mà không cần can thiệp.</li>
+                                <li><strong>Ngưỡng Số Tiền (CNY):</strong> Nhập một số tiền. Nếu được đặt, khi tiền
+                                    thưởng vượt quá số này, nó bắt buộc phải duyệt thủ công.<br>
+                                    <em>*Lưu ý: Nhập 0 hoặc để trống có thể có nghĩa là mọi số tiền đều cần duyệt thủ
+                                        công (tùy thuộc vào hệ thống; khuyên nên kiểm tra khi thiết lập ban đầu).</em>
+                                </li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>Điểm danh bù</strong></td>
-                        <td>Tùy chọn cho phép người dùng tiêu tốn một hạn mức nhất định để nhận lại những ngày đã bỏ lỡ.
+                        <td style="font-weight: bold; background-color: #f0fdf4;">II. Bảng Cài Đặt Phần Thưởng</td>
+                        <td>Kiểm soát chính xác cấu trúc phần thưởng theo tầng thông qua quản lý bảng. Xác định giá trị
+                            phần thưởng, giới hạn hạn ngạch và xác suất trúng cho các thứ hạng khác nhau để kiểm soát
+                            chính xác Tỷ Lệ Hoàn Vốn (ROI).</td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Giải Thưởng (Nhập Số Tiền):</strong> Nhập giá trị phần thưởng tương ứng với
+                                    thứ hạng.</li>
+                                <li><strong>Số Người Trúng:</strong> Đặt số lượng người tối đa có thể trúng giải này.
+                                </li>
+                                <li><strong>Số Lượng Còn Lại:</strong> Hiển thị kho hạn ngạch hiện tại còn lại để phân
+                                    phối.</li>
+                                <li><strong>Cài Đặt Xác Suất:</strong> Nhập xác suất trúng (khuyên dùng số thập phân, ví
+                                    dụ: 0.1 = 10%). Đảm bảo tổng tất cả các xác suất phù hợp với logic.</li>
+                                <li><strong>Yêu Cầu Doanh Thu:</strong> Đặt lượng doanh thu (vòng cược) bắt buộc sau khi
+                                    nhận thưởng. Nhập 0 nghĩa là không có giới hạn (rút tiền ngay).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>⚠️ Lưu Ý:</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>Lưu Tiến Trình:</strong> Trước khi chuyển sang "Cài Đặt Kiểm Soát Rủi Ro"
+                                    hoặc "Điều Kiện Nhận", hãy nhớ nhấp vào "Bước Tiếp Theo" để lưu cấu hình.</li>
+                                <li><strong>Kiểm Tra Xác Suất:</strong> Sau khi điều chỉnh, hãy nhớ tính toán lại tổng
+                                    xác suất để tránh phát thưởng bất thường.</li>
+                                <li><strong>Xem Trước:</strong> Sau khi cấu hình xong, nên kiểm tra lại số liệu ở bước
+                                    "Xem Trước Gửi Đi" cuối cùng.</li>
+                            </ul>
                         </td>
                     </tr>
                 </tbody>

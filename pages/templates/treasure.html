@@ -8,31 +8,107 @@
 </head>
 
 <body>
-    <div class="lang-content lang-sc">
+    <div class="lang-content lang-sc active">
         <h1>定期宝箱模板</h1>
         <div class="highlight-box">
-            <p>在固定周期或特定时间范围内，提供给符合条件的活跃用户开启的奖励宝箱。</p>
+            <p>本手册针对「活动条件」配置页面进行说明，协助管理人员设定活动的参与门槛、奖励机制及审核流程。配置共分为「全局功能设定」与「阶梯奖励详情」两大部分。</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/box.jpg" alt="定期宝箱配置预览">
-            <div class="img-caption">定期宝箱活动后台配置界面</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/box.jpg" class="table-img" alt="定期宝箱配置预览"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">配置项</th>
-                        <th>说明</th>
+                        <th style="width: 120px;">分类</th>
+                        <th style="width: 180px;">设定项</th>
+                        <th>说明与配置参数</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>开启频率</strong></td>
-                        <td>按日、周或月循环开启，或设置一次性特定时间开启。</td>
+                        <td rowspan="3" style="font-weight: bold; background-color: #f8fafc;">二、 全局功能模块 <br>(红色标注区域)
+                        </td>
+                        <td><strong>1. 活动倒计时提示</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>功能：</strong>控制前端页面是否显示活动剩余时间。</li>
+                                <li><strong>应用：</strong>开启后可增强活动的紧迫感，提升用户的转化率。</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>活跃要求</strong></td>
-                        <td>需满足前置流水条件方可获得开启机会。</td>
+                        <td><strong>2. 基础参数设定</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>充值金额：</strong>勾选后，系统计算时将包含后台人工充值的金额，否则仅计算在线充值。</li>
+                                <li><strong>审核方式：</strong><br>
+                                    1. <strong>人工审核：</strong>奖励发放需经后台管理员逐笔确认。<br>
+                                    2. <strong>自动审核：</strong>系统根据规则达标后立即自动发放奖励。
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. 奖励配置总览</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>功能：</strong>此区域为活动奖励的核心配置区，支援多层级（阶梯式）的配置方案，用以满足不同层级用户的激励需求。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" style="font-weight: bold; background-color: #f0fdf4;">三、 奖励细节指南 <br>(绿色标注区域)
+                        </td>
+                        <td><strong>a.1 奖励层级基础参数</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>每月发放日：</strong>透过下拉式选单选择每月结算与奖励发放的具体日期。</li>
+                                <li><strong>充值金额区间(元)：</strong>设定进入该奖励层级所需的充值总额下限与上限。</li>
+                                <li><strong>奖金区间：</strong>定义该层级对外显示的预期奖金范围（仅供前端参考）。</li>
+                                <li><strong>层级管理：</strong>点击右上角「配置选项」可展开更多进阶设定，或点击「删除」移除该层级。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2 奖励随机规则细节</strong></td>
+                        <td>
+                            <strong>配置逻辑：</strong>系统支援在同一层级内，根据用户不同的充值金额细分随机奖金范围。<br>
+                            <strong>参数填写：</strong>
+                            <ul class="flow-list">
+                                <li><strong>充值金额：</strong>输入用户需达到的具体充值数值。</li>
+                                <li><strong>奖金随机值下限/上限：</strong>设定系统在该金额点所发放的奖金变动范围。（注：若下限与上限数值相同，则代表发放固定金额奖励。）</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.3 规则增减操作</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>新增规则：</strong>点击「+ 新增规则」可在当前层级下扩充更多金额区段，实现更细腻的奖励梯度。</li>
+                                <li><strong>删除：</strong>点击每行末端的「删除」按钮即可移除特定的金额规则。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.4 扩充活动层级</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>新增层级：</strong>若活动设计包含多个进阶门槛（例如：初级宝箱、中级宝箱、高级宝箱），请点击此按钮以新增一组完整的层级配置模板。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>四、 注意事项与规范</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>时间规范：</strong>系统默认奖励结算发放时间为当日中午 12:00（当地时间），配置前请务必核对时区与日期设定。</li>
+                                <li><strong>逻辑检查：</strong>设定多个层级时，请确保「充值金额区间」之间不具备重叠性，以免造成系统判别异常。</li>
+                                <li><strong>规则限额：</strong>每个发放日最少需设置 1 项规则，单个层级下最多建议设置 10 项规则。</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -42,29 +118,131 @@
     <div class="lang-content lang-en">
         <h1>Periodic Treasure Chest Template</h1>
         <div class="highlight-box">
-            <p>Reward chests available for eligible active users to open during fixed cycles or specific time ranges.
+            <p>This manual provides instructions for the "Activity Conditions" configuration page, assisting
+                administrators in setting participation thresholds, reward mechanisms, and approval processes. The
+                configuration is divided into two main parts: "Global Function Settings" and "Tiered Reward Details".
             </p>
         </div>
-        <div class="img-container">
-            <img src="../../img/box.jpg" alt="Periodic Treasure Chest Configuration Preview">
-            <div class="img-caption">Periodic Treasure Chest Activity Backend Configuration Interface</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/box.jpg" class="table-img" alt="Periodic Treasure Chest Configuration Preview"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Config Item</th>
-                        <th>Description</th>
+                        <th style="width: 120px;">Category</th>
+                        <th style="width: 180px;">Setting Item</th>
+                        <th>Description & Parameters</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Open Frequency</strong></td>
-                        <td>Recurring daily, weekly, monthly, or a one-time specific time window.</td>
+                        <td rowspan="3" style="font-weight: bold; background-color: #f8fafc;">II. Global Function
+                            Modules <br>(Red Highlighted Area)</td>
+                        <td><strong>1. Activity Countdown Prompt</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Function:</strong> Controls whether the remaining activity time is displayed
+                                    on the frontend page.</li>
+                                <li><strong>Application:</strong> When enabled, it enhances the urgency of the activity
+                                    and improves user conversion rates.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>Activity Rules</strong></td>
-                        <td>Turnover requirements must be met to earn a chest opening opportunity.</td>
+                        <td><strong>2. Basic Parameter Settings</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Deposit Amount:</strong> When checked, the system calculation will include
+                                    manual deposits made by the backend; otherwise, only online deposits are calculated.
+                                </li>
+                                <li><strong>Approval Method:</strong><br>
+                                    1. <strong>Manual Approval:</strong> Reward distribution requires manual
+                                    confirmation by backend administrators case by case.<br>
+                                    2. <strong>Auto Approval:</strong> The system automatically distributes rewards
+                                    immediately after the rules are met.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Reward Configuration Overview</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Function:</strong> This area is the core configuration for activity rewards.
+                                    It supports multi-level (tiered) configuration schemes to meet the incentive needs
+                                    of users at different levels.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" style="font-weight: bold; background-color: #f0fdf4;">III. Reward Details Guide
+                            <br>(Green Highlighted Area)</td>
+                        <td><strong>a.1 Reward Tier Basic Parameters</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Monthly Distribution Day:</strong> Select specific dates for monthly
+                                    settlement and reward distribution via the dropdown menu.</li>
+                                <li><strong>Deposit Amount Range:</strong> Set the lower and upper limits of the total
+                                    deposit required to enter this reward tier.</li>
+                                <li><strong>Bonus Range:</strong> Define the expected bonus range displayed externally
+                                    for this tier (for frontend reference only).</li>
+                                <li><strong>Tier Management:</strong> Click the "Config Options" in the upper right
+                                    corner to expand advanced settings, or click "Delete" to remove this tier.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2 Randomized Reward Rules</strong></td>
+                        <td>
+                            <strong>Config Logic:</strong> The system supports subdividing random bonus ranges based on
+                            different user deposit amounts within the same tier.<br>
+                            <strong>Parameter Entry:</strong>
+                            <ul class="flow-list">
+                                <li><strong>Deposit Amount:</strong> Enter the specific deposit value the user needs to
+                                    reach.</li>
+                                <li><strong>Random Bonus Min/Max:</strong> Set the fluctuation range of the bonus
+                                    distributed by the system at that amount point. (Note: If the lower and upper bounds
+                                    are the same, it means a fixed amount reward is distributed.)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.3 Rule Add/Remove Operations</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Add Rule:</strong> Click "+ Add Rule" to expand more amount sections under
+                                    the current tier for finer reward gradients.</li>
+                                <li><strong>Delete:</strong> Click the "Delete" button at the end of each row to remove
+                                    a specific amount rule.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.4 Expand Activity Tiers</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Add Tier:</strong> If the activity design includes multiple advanced
+                                    thresholds (e.g., Bronze Chest, Silver Chest, Gold Chest), click this button to add
+                                    a complete set of tier configuration templates.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>IV. Precautions & Specifications</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>Time Specification:</strong> The system's default reward settlement and
+                                    distribution time is 12:00 PM (local time) on the day. Be sure to check timezone and
+                                    date settings before configuring.</li>
+                                <li><strong>Logic Check:</strong> When setting multiple tiers, ensure that the "Deposit
+                                    Amount Ranges" do not overlap to prevent abnormal system judgments.</li>
+                                <li><strong>Rule Limits:</strong> At least 1 rule must be set per distribution day; a
+                                    maximum of 10 rules is recommended within a single tier.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -74,30 +252,127 @@
     <div class="lang-content lang-vn">
         <h1>Mẫu rương kho báu định kỳ</h1>
         <div class="highlight-box">
-            <p>Rương phần thưởng dành cho những người dùng tích cực đủ điều kiện để mở trong các chu kỳ cố định hoặc
-                khoảng thời gian cụ thể.</p>
+            <p>Tài liệu hướng dẫn này dành cho trang cấu hình "Điều Kiện Hoạt Động", hỗ trợ quản trị viên thiết lập
+                ngưỡng tham gia, cơ chế phần thưởng và quy trình phê duyệt. Cấu hình được chia thành hai phần chính:
+                "Cài Đặt Chức Năng Cốt Lõi" và "Chi Tiết Phần Thưởng Từng Bậc".</p>
         </div>
-        <div class="img-container">
-            <img src="../../img/box.jpg" alt="Xem trước cấu hình Rương kho báu định kỳ">
-            <div class="img-caption">Giao diện cấu hình Backend cho hoạt động Rương kho báu định kỳ</div>
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/box.jpg" class="table-img" alt="Xem trước cấu hình Rương kho báu định kỳ"
+                style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
         </div>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 150px;">Mục cấu hình</th>
-                        <th>Mô tả</th>
+                        <th style="width: 120px;">Danh Mục</th>
+                        <th style="width: 180px;">Mục Thiết Lập</th>
+                        <th>Mô Tả & Thông Số</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Tần suất mở</strong></td>
-                        <td>Mở định kỳ hàng ngày, hàng tuần, hàng tháng hoặc thiết lập một khoảng thời gian cụ thể một
-                            lần.</td>
+                        <td rowspan="3" style="font-weight: bold; background-color: #f8fafc;">II. Mô-đun Chức Năng Cốt
+                            Lõi <br>(Khu vực màu đỏ)</td>
+                        <td><strong>1. Nhắc Nhở Đếm Ngược</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Chức Năng:</strong> Kiểm soát xem thời gian còn lại của hoạt động có hiển
+                                    thị trên trang giao diện hay không.</li>
+                                <li><strong>Ứng Dụng:</strong> Khi được bật, nó có thể tăng tính cấp bách của hoạt động
+                                    và cải thiện tỷ lệ chuyển đổi của người dùng.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td><strong>Yêu cầu tích cực</strong></td>
-                        <td>Phải đáp ứng các điều kiện doanh thu tiên quyết để có cơ hội mở rương.</td>
+                        <td><strong>2. Thông Số Cơ Bản</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Số Tiền Nạp:</strong> Khi được chọn, hệ thống sẽ bao gồm cả số tiền nạp thủ
+                                    công từ backend; nếu không, chỉ tính số tiền nạp trực tuyến.</li>
+                                <li><strong>Phương Thức Phê Duyệt:</strong><br>
+                                    1. <strong>Thủ Công:</strong> Việc phân bổ phần thưởng cần sự xác nhận từng khoản từ
+                                    quản trị viên.<br>
+                                    2. <strong>Tự Động:</strong> Hệ thống tự động phân bổ ngay sau khi đạt đủ điều kiện
+                                    của quy tắc.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Tổng Quan Cấu Hình Thưởng</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Chức Năng:</strong> Đây là khu vực cốt lõi để thiết lập phần thưởng. Hỗ trợ
+                                    nhiều cấp độ (bậc thang) để đáp ứng nhu cầu khuyến khích cho các hạng người dùng
+                                    khác nhau.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" style="font-weight: bold; background-color: #f0fdf4;">III. Hướng Dẫn Chi Tiết
+                            <br>(Khu vực màu xanh)</td>
+                        <td><strong>a.1 Thông Số Cơ Bản Của Từng Cấp</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Ngày Phân Bổ Hàng Tháng:</strong> Chọn ngày cụ thể để quyết toán và phân bổ
+                                    thông qua danh sách thả xuống.</li>
+                                <li><strong>Khoảng Số Tiền Nạp:</strong> Thiết lập giới hạn dưới và trên của tổng số
+                                    tiền nạp cần thiết để vào cấp độ này.</li>
+                                <li><strong>Khoảng Tiền Thưởng:</strong> Chỉ định phạm vi tiền thưởng dự kiến hiển thị
+                                    bên ngoài cho cấp độ này (chỉ để tham khảo ở UI).</li>
+                                <li><strong>Quản Lý Cấp Độ:</strong> Nhấp vào "Tùy Chọn Cấu Hình" ở góc trên cùng để mở
+                                    rộng các thiết lập nâng cao, hoặc "Xóa" để loại bỏ.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2 Quy Tắc Thưởng Ngẫu Nhiên</strong></td>
+                        <td>
+                            <strong>Logic:</strong> Hệ thống hỗ trợ chia nhỏ phạm vi tiền thưởng ngẫu nhiên dựa trên các
+                            khoản tiền nạp khác nhau trong cùng một cấp độ.<br>
+                            <strong>Nhập Thông Số:</strong>
+                            <ul class="flow-list">
+                                <li><strong>Số Tiền Nạp:</strong> Nhập giá trị tiền nạp cụ thể mà người dùng cần đạt
+                                    được.</li>
+                                <li><strong>Tối Thiểu/Tối Đa:</strong> Thiết lập phạm vi biến động tiền thưởng. (Lưu ý:
+                                    Nếu giới hạn dưới và trên giống nhau, nghĩa là phát thưởng cố định.)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.3 Thêm/Xóa Quy Tắc</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Thêm Quy Tắc:</strong> Nhấp "+ Thêm Quy Tắc" để mở rộng thêm các khoảng tiền
+                                    dưới cấp độ hiện tại để có độ dốc phần thưởng tinh tế hơn.</li>
+                                <li><strong>Xóa:</strong> Nhấp vào "Xóa" ở cuối mỗi hàng để loại bỏ quy tắc số tiền đó.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.4 Mở Rộng Cấp Độ Hoạt Động</strong></td>
+                        <td>
+                            <ul class="flow-list">
+                                <li><strong>Thêm Cấp Độ:</strong> Nếu thiết kế bao gồm nhiều ngưỡng cao cấp (ví dụ:
+                                    Rương Đồng, Rương Bạc, Rương Vàng), nhấp nút này để thêm một bộ cấu hình cấp độ hoàn
+                                    chỉnh.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #fef2f2; color: #b91c1c;">
+                            <strong>IV. Lưu Ý Và Quy Định</strong><br>
+                            <ul class="flow-list" style="margin-bottom: 0;">
+                                <li><strong>Quy Định Thời Gian:</strong> Thời gian quyết toán và phân bổ mặc định là
+                                    12:00 trưa (giờ địa phương) trong ngày. Vui lòng kiểm tra múi giờ và cài đặt.</li>
+                                <li><strong>Kiểm Tra Logic:</strong> Khi thiết lập nhiều cấp độ, đảm bảo các "Khoảng
+                                    Tiền Nạp" không bị chồng chéo để tránh lỗi hệ thống.</li>
+                                <li><strong>Giới Hạn Quy Tắc:</strong> Ít nhất 1 quy tắc phải được đặt cho mỗi ngày phát
+                                    thưởng; tối đa khuyến nghị là 10 quy tắc trong một cấp độ.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
