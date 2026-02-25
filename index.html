@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="活动功能手册 - 包含活动列表管理及新增活动的全流程指南。">
+    <title>活动功能手册 | Operation Manual</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1><i data-lucide="book-open"></i> 活动手册</h1>
+            </div>
+            <nav class="nav-list">
+                <li class="nav-item">
+                    <a href="pages/usage.html" class="nav-link active" data-id="usage">
+                        <i data-lucide="info"></i>
+                        <span>使用前需知</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/list.html" class="nav-link" data-id="list">
+                        <i data-lucide="list"></i>
+                        <span>活动列表说明</span>
+                    </a>
+                </li>
+                <li class="nav-item has-submenu" id="menu-flow">
+                    <a href="#" class="nav-link" data-id="flow-parent">
+                        <i data-lucide="git-branch"></i>
+                        <span>新增活动流程</span>
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li><a href="pages/flow-steps/step1-settings.html" class="nav-sub-link" data-id="step1">4-1.
+                                活动设置</a></li>
+                        <li><a href="pages/flow-steps/step2-images.html" class="nav-sub-link" data-id="step2">4-2.
+                                活动图片</a></li>
+                        <li><a href="pages/flow-steps/step3-participants.html" class="nav-sub-link" data-id="step3">4-3.
+                                参与对象名单</a></li>
+                        <li><a href="pages/flow-steps/step4-conditions.html" class="nav-sub-link" data-id="step4">4-4.
+                                活动条件</a></li>
+                        <li><a href="pages/flow-steps/step5-risk.html" class="nav-sub-link" data-id="step5">4-5.
+                                风控条件</a></li>
+                        <li><a href="pages/flow-steps/step6-claim.html" class="nav-sub-link" data-id="step6">4-6.
+                                领取条件</a></li>
+                        <li><a href="pages/flow-steps/step7-withdraw.html" class="nav-sub-link" data-id="step7">4-7.
+                                提款条件</a></li>
+                        <li><a href="pages/flow-steps/step8-preview.html" class="nav-sub-link" data-id="step8">4-8.
+                                送出预览</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu" id="menu-templates">
+                    <a href="pages/templates/index.html" class="nav-link" data-id="templates-parent">
+                        <i data-lucide="layers"></i>
+                        <span>活动模板说明</span>
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li><a href="pages/templates/continuous.html" class="nav-sub-link"
+                                data-id="tmpl-continuous">连续性活动</a></li>
+                        <li><a href="pages/templates/rescue.html" class="nav-sub-link" data-id="tmpl-rescue">救援金</a>
+                        </li>
+                        <li><a href="pages/templates/treasure.html" class="nav-sub-link"
+                                data-id="tmpl-treasure">定期宝箱</a></li>
+                        <li><a href="pages/templates/login.html" class="nav-sub-link" data-id="tmpl-login">每天登入</a></li>
+                        <li><a href="pages/templates/registration.html" class="nav-sub-link" data-id="tmpl-reg">注册礼金</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu" id="menu-promo">
+                    <a href="pages/promo-code/index.html" class="nav-link" data-id="promo-parent">
+                        <i data-lucide="ticket"></i>
+                        <span>优惠码设置</span>
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li><a href="pages/promo-code/intro.html" class="nav-sub-link" data-id="promo-intro">1.
+                                优惠码列表操作说明</a></li>
+                        <li><a href="pages/promo-code/restrictions.html" class="nav-sub-link" data-id="promo-restr">2.
+                                优惠码兑换限制</a></li>
+                        <li><a href="pages/promo-code/desc.html" class="nav-sub-link" data-id="promo-desc">3.
+                                优惠码说明设置</a></li>
+                        <li>
+                            <a href="pages/promo-code/flow.html" class="nav-sub-link" data-id="promo-flow">4.
+                                新增优惠码（新增流程）</a>
+                        </li>
+                    </ul>
+                </li>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="lang-dropdown">
+                    <button class="lang-dropbtn" id="active-lang">
+                        <i data-lucide="languages"></i>
+                        <span>简体中文</span>
+                        <i data-lucide="chevron-down" class="chevron"></i>
+                    </button>
+                    <div class="lang-dropdown-content">
+                        <a href="#" data-lang="sc">简体中文</a>
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="vn">Tiếng Việt</a>
+                    </div>
+                </div>
+            </header>
+            <section class="content-frame-container">
+                <iframe src="pages/usage.html" id="content-frame"></iframe>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
