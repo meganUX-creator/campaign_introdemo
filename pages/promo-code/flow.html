@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增优惠码流程</title>
+    <link rel="stylesheet" href="../../css/page-style.css">
+    <style>
+        .step-focus {
+            border-left: 4px solid #4f46e5;
+            background: #f8fafc;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+        }
+
+        .step-standard {
+            opacity: 0.8;
+            margin-bottom: 0.75rem;
+            padding: 1rem;
+            border: 1px dashed #e2e8f0;
+            border-radius: 0.5rem;
+        }
+
+        .step-standard h3 {
+            margin: 0;
+            font-size: 1rem;
+            color: #64748b;
+        }
+
+        .step-standard p {
+            margin: 0.25rem 0 0;
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        .flow-section {
+            margin-bottom: 2rem;
+        }
+
+        .flow-section h2 {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .flow-list {
+            padding-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .flow-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-sublist {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lang-content lang-sc active">
+        <h1>新增优惠码流程与设置说明</h1>
+        <p>这份界面截图显示的是一个后台系统的「优惠码设置」模组。该页面主要用于定义优惠活动的基础资讯、时间、币种、审核流程以及核心的参与规则与优惠券配置。<br>以下是根据图中标注区域（1-5 及 a.1-a.3）的详细说明：
+        </p>
+
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/promotecodesettingrules2.jpg" class="table-img" alt="新增优惠码流程界面"
+                style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
+        </div>
+
+        <div class="flow-section">
+            <h2>一、 基础配置区域 (1-4)</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;">编号</th>
+                            <th style="width: 150px;">模块名称</th>
+                            <th>功能说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td><strong>前台展示名称</strong></td>
+                            <td>设定该优惠活动在用户端（App/网页）显示的标题。这是吸引用户点击的第一眼资讯。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td><strong>时间设定</strong></td>
+                            <td>定义活动的有效期限。可选择「指定时间段」（需选择开始与结束日期）或「长期展示」。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td><strong>币种设置</strong></td>
+                            <td>选择该优惠码适用的法定货币或虚拟货币种类（如：CNY, USD, USDT 等）。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td><strong>审核方式</strong></td>
+                            <td>设定领取优惠后是否需要人工介入。可选「人工审核」以提高风控安全性，或「自动审核」以提升用户体验。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 2rem;">二、 优惠内容与参与规则 (5)</h2>
+            <p style="color: #64748b; margin-bottom: 1.5rem;">此区域为整个设定的核心，定义了用户获得优惠券必须达成的门槛。</p>
+
+            <div class="step-standard">
+                <h3>a.1 参与条件一：基础账号与行为门槛</h3>
+                <p>此区块主要针对账号的安全性与社交属性进行过滤：</p>
+                <ul class="flow-list">
+                    <li><strong>个人信息：</strong>可勾选必须绑定的联络方式（如：电子邮件、WhatsApp、Telegram、QQ、Zalo）。</li>
+                    <li><strong>支付条件：</strong>规定用户必须绑定特定的支付工具（如：电子钱包、银行卡、虚拟币钱包）。</li>
+                    <li><strong>手机验证：</strong>强制要求手机号码绑定状态。</li>
+                    <li><strong>邀请/登录行为：</strong>设定需「邀请好友数」或「连续登录天数」达标。</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.2 参与条件二：资金行为门槛</h3>
+                <p>此区块针对用户的资金贡献度进行设定：</p>
+                <ul class="flow-list">
+                    <li><strong>存款要求：</strong>检查用户的有效存款次数或金额。</li>
+                    <li><strong>投注要求：</strong>检查用户的有效投注额或流水是否达标。</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.3 新增优惠码清单</h3>
+                <p>这是最终产出优惠券的地方，支援批量生成与管理：</p>
+                <ul class="flow-list">
+                    <li><strong>类型切换：</strong>可选择「系统生成」随机码或「自定义」特定字串的优惠码。</li>
+                    <li><strong>核心参数：</strong>
+                        <ul class="flow-sublist">
+                            <li><strong>金额：</strong>单张优惠券的价值。</li>
+                            <li><strong>数量：</strong>该组优惠码的总发放张数。</li>
+                            <li><strong>每日限制：</strong>单个账号每天最多可使用的次数。</li>
+                        </ul>
+                    </li>
+                    <li><strong>操作：</strong>点击右侧「新增优惠码」按钮可增加多组不同面额或规则的代码。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keep English and Vietnamese as placeholders for translation since markdown was only provided in SC -->
+    <div class="lang-content lang-en">
+        <h1>New Promo Code Flow and Settings</h1>
+        <p>This interface screenshot shows the "Promo Code Settings" module of the backend system. This page is
+            primarily used to define the basic information, time, currency, review process, as well as the core
+            participation rules and coupon configuration for promotional activities.<br>Below is a detailed description
+            based on the marked areas (1-5 and a.1-a.3) in the image:</p>
+
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/promotecodesettingrules2.jpg" class="table-img" alt="New Promo Code Flow Interface"
+                style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
+        </div>
+
+        <div class="flow-section">
+            <h2>I. Basic Configuration Area (1-4)</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;">No.</th>
+                            <th style="width: 150px;">Module Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td><strong>Display Name</strong></td>
+                            <td>Set the title of the promotion displayed on the client side (App/Web). This is the first
+                                piece of information to attract user clicks.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td><strong>Time Settings</strong></td>
+                            <td>Define the valid period of the promotion. You can choose "Specific Time Range" (requires
+                                selecting start and end dates) or "Long-term Display".</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td><strong>Currency Settings</strong></td>
+                            <td>Select the types of fiat or virtual currencies applicable to this promo code (e.g., CNY,
+                                USD, USDT).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td><strong>Review Method</strong></td>
+                            <td>Set whether manual intervention is required after claiming the promotion. You can choose
+                                "Manual Review" to improve risk control security, or "Auto Review" to enhance user
+                                experience.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 2rem;">II. Promotional Content and Participation Rules (5)</h2>
+            <p style="color: #64748b; margin-bottom: 1.5rem;">This area is the core of the entire setup, defining the
+                thresholds users must meet to obtain coupons.</p>
+
+            <div class="step-standard">
+                <h3>a.1 Condition One: Basic Account & Behavior Thresholds</h3>
+                <p>This section filters based on account security and social attributes:</p>
+                <ul class="flow-list">
+                    <li><strong>Personal Info:</strong> Select required linked contact methods (e.g., Email, WhatsApp,
+                        Telegram, QQ, Zalo).</li>
+                    <li><strong>Payment Conditions:</strong> Require users to bind specific payment tools (e.g.,
+                        e-wallets, bank cards, crypto wallets).</li>
+                    <li><strong>Phone Verification:</strong> Mandate phone number binding status.</li>
+                    <li><strong>Invitation/Login Behavior:</strong> Set requirements for "Number of invited friends" or
+                        "Consecutive login days".</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.2 Condition Two: Financial Behavior Thresholds</h3>
+                <p>This section sets thresholds based on the user's financial contribution:</p>
+                <ul class="flow-list">
+                    <li><strong>Deposit Requirements:</strong> Check the user's valid deposit count or amount.</li>
+                    <li><strong>Betting Requirements:</strong> Check if the user's valid betting amount or turnover is
+                        met.</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.3 Add Promo Code List</h3>
+                <p>This is where coupons are finally generated, supporting batch generation and management:</p>
+                <ul class="flow-list">
+                    <li><strong>Type Switching:</strong> Choose "System Generated" random codes or "Custom" string promo
+                        codes.</li>
+                    <li><strong>Core Parameters:</strong>
+                        <ul class="flow-sublist">
+                            <li><strong>Amount:</strong> the value of a single coupon.</li>
+                            <li><strong>Quantity:</strong> the total number of promo codes to be issued in this batch.
+                            </li>
+                            <li><strong>Daily Limit:</strong> maximum usage times per day for a single account.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Operation:</strong> Click the "Add Promo Code" button on the right to add multiple sets
+                        of codes with different denominations or rules.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="lang-content lang-vn">
+        <h1>Quy trình và Cài đặt Thêm Mã Khuyến Mãi Mới</h1>
+        <p>Ảnh chụp giao diện này hiển thị mô-đun "Cài đặt Mã Khuyến Mãi" của hệ thống phụ trợ. Trang này chủ yếu được
+            sử dụng để xác định thông tin cơ bản, thời gian, tiền tệ, quy trình đánh giá, cũng như các quy tắc tham gia
+            cốt lõi và cấu hình phiếu giảm giá cho các hoạt động khuyến mãi.<br>Dưới đây là mô tả chi tiết dựa trên các
+            khu vực được đánh dấu (1-5 và a.1-a.3) trong hình ảnh:</p>
+
+        <div class="img-container"
+            style="text-align: center; margin: 20px auto; display: flex; justify-content: center;">
+            <img src="../../img/promotecodesettingrules2.jpg" class="table-img" alt="Giao diện quy trình thêm mã KM mới"
+                style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: block; margin: 0 auto;">
+        </div>
+
+        <div class="flow-section">
+            <h2>I. Khu Vực Cấu Hình Cơ Bản (1-4)</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;">STT</th>
+                            <th style="width: 150px;">Tên Mô-đun</th>
+                            <th>Mô Tả Chức Năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td><strong>Tên Hiển Thị Front-End</strong></td>
+                            <td>Đặt tiêu đề của chương trình khuyến mãi hiển thị trên phía client (App/Web). Đây là
+                                thông tin đầu tiên để thu hút người dùng nhấp vào.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td><strong>Cài Đặt Thời Gian</strong></td>
+                            <td>Xác định thời hạn hiệu lực của chương trình. Bạn có thể chọn "Khoảng thời gian cụ thể"
+                                (cần chọn ngày bắt đầu và kết thúc) hoặc "Hiển thị dài hạn".</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td><strong>Cài Đặt Tiền Tệ</strong></td>
+                            <td>Chọn các loại tiền pháp định hoặc tiền ảo áp dụng cho mã KM này (ví dụ: CNY, USD, USDT).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td><strong>Phương Thức Đánh Giá</strong></td>
+                            <td>Quy định có cần can thiệp thủ công sau khi nhận khuyến mãi hay không. Có thể chọn "Đánh
+                                giá thủ công" để tăng độ bảo mật kiểm soát rủi ro, hoặc "Đánh giá tự động" để cải thiện
+                                trải nghiệm người dùng.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 2rem;">II. Nội Dung Khuyến Mãi và Quy Tắc Tham Gia (5)</h2>
+            <p style="color: #64748b; margin-bottom: 1.5rem;">Khu vực này là cốt lõi của toàn bộ thiết lập, xác định các
+                ngưỡng mà người dùng phải đạt được để nhận phiếu giảm giá.</p>
+
+            <div class="step-standard">
+                <h3>a.1 Điều Kiện Một: Ngưỡng Tài Khoản & Hành Vi Cơ Bản</h3>
+                <p>Phần này lọc dựa trên thuộc tính xã hội và bảo mật tài khoản:</p>
+                <ul class="flow-list">
+                    <li><strong>Thông Tin Cá Nhân:</strong> Chọn các phương thức liên hệ bắt buộc phải liên kết (ví dụ:
+                        Email, WhatsApp, Telegram, QQ, Zalo).</li>
+                    <li><strong>Điều Kiện Thanh Toán:</strong> Yêu cầu người dùng phải liên kết các công cụ thanh toán
+                        cụ thể (ví dụ: ví điện tử, thẻ ngân hàng, ví tiền ảo).</li>
+                    <li><strong>Xác Minh Điện Thoại:</strong> Bắt buộc trạng thái liên kết số điện thoại.</li>
+                    <li><strong>Hành Vi Lời Mời/Đăng Nhập:</strong> Đặt yêu cầu đạt chuẩn "Số lượng bạn bè đã mời" hoặc
+                        "Số ngày đăng nhập liên tiếp".</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.2 Điều Kiện Hai: Ngưỡng Hành Vi Tài Chính</h3>
+                <p>Phần này thiết lập các ngưỡng dựa trên sự đóng góp tài chính của người dùng:</p>
+                <ul class="flow-list">
+                    <li><strong>Yêu Cầu Nạp Tiền:</strong> Kiểm tra số lần hoặc số tiền nạp hợp lệ của người dùng.</li>
+                    <li><strong>Yêu Cầu Đặt Cược:</strong> Kiểm tra xem số tiền cược hợp lệ hoặc doanh thu của người
+                        dùng có đạt yêu cầu hay không.</li>
+                </ul>
+            </div>
+
+            <div class="step-standard">
+                <h3>a.3 Danh Sách Thêm Mã Khuyến Mãi</h3>
+                <p>Đây là nơi mã giảm giá cuối cùng được tạo ra, hỗ trợ tạo hàng loạt và quản lý:</p>
+                <ul class="flow-list">
+                    <li><strong>Chuyển Đổi Loại:</strong> Chọn mã ngẫu nhiên "Do hệ thống tạo" hoặc mã khuyến mãi chuỗi
+                        "Tùy chỉnh".</li>
+                    <li><strong>Thông Số Cốt Lõi:</strong>
+                        <ul class="flow-sublist">
+                            <li><strong>Số tiền:</strong> giá trị của một phiếu giảm giá đơn lẻ.</li>
+                            <li><strong>Số lượng:</strong> tổng số lượng phát hành của nhóm mã KM này.</li>
+                            <li><strong>Giới hạn Hàng ngày:</strong> số lần sử dụng tối đa mỗi ngày cho một tài khoản.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Thao Tác:</strong> Nhấp vào nút "Thêm mã khuyến mãi" ở bên phải để thêm nhiều bộ mã với
+                        các mệnh giá hoặc quy tắc khác nhau.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/page-script.js"></script>
+</body>
+
+</html>

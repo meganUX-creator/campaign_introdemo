@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>活动列表说明</title>
+    <link rel="stylesheet" href="../css/page-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="lang-content lang-sc">
+        <h1>3. 活动列表说明</h1>
+        <p>本章节将​说明​活动列表的筛选功能跟栏位跟按钮定义说明。</p>
+        <div class="img-container">
+            <img src="../img/campain_list.jpg" alt="活动列表界面">
+            <div class="img-caption">活动列表管理界面预览</div>
+        </div>
+
+        <h2 class="section-title">a. 操作提示</h2>
+        <ul>
+            <li><strong>a.1. 点击“上传”按钮</strong>：出现右侧抽屉显示配置预览。
+                <div class="img-comparison-grid">
+                    <div class="img-container">
+                        <img src="../img/campain_list_img.jpg" alt="上传配置">
+                        <div class="img-caption">针对不同图片的版位跟语系上传图片或链接</div>
+                    </div>
+                </div>
+            </li>
+            <li><strong>a.2. 充值类型点击</strong>：点击展开，对于充值活动模板可以查看最低充值金额与次数。</li>
+        </ul>
+
+        <h2 class="section-title">1. 按钮说明</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">按钮</th>
+                        <th>功能说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>+ 新增活动</strong></td>
+                        <td>点击进入建立新活动的编辑页面。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>刷新页面</strong></td>
+                        <td>重新加载当前页面资料。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">2. 筛选列说明</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">筛选项目</th>
+                        <th>说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>状态</strong></td>
+                        <td>依据活动的启用状态（如：启用、禁用）进行过滤。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>活动模板</strong></td>
+                        <td>依据模板类型（如：砸金蛋、充值活动）进行过滤。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>币种</strong></td>
+                        <td>依据活动适用的结算币种进行过滤。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>语系</strong></td>
+                        <td>依据前端展示语系进行过滤. </td>
+                    </tr>
+                    <tr>
+                        <td><strong>活动 ID</strong></td>
+                        <td>透过 ID 进行精确查询。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>活动名称</strong></td>
+                        <td>透过名称关键字进行模糊查询。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>日期区间</strong></td>
+                        <td>依据活动的有效起止时间范围进行筛选。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>重置</strong></td>
+                        <td>清空所有已输入的筛选条件。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>查询</strong></td>
+                        <td>执行筛选动作并更新列表。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">3. 表格栏位说明</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">栏位名称</th>
+                        <th>定义与逻辑</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ID</strong></td>
+                        <td>活动唯一的辨识编号。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>排序</strong></td>
+                        <td>活动在前台展示的优先顺位。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>状态</strong></td>
+                        <td>显示活动目前的启用或禁用状态。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>模板类型</strong></td>
+                        <td>标识系统预设或使用者自定义模板。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>起止时间</strong></td>
+                        <td>活动的有效开放时间段。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>币种</strong></td>
+                        <td>活动适用的结算币种。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>语系</strong></td>
+                        <td>活动前端展示所使用的语言。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>活动模板</strong></td>
+                        <td>该活动所套用的功能模板名称。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>前台显示名称</strong></td>
+                        <td>使用者在 App 或网页看到的活动标题。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>预览图片</strong></td>
+                        <td>点击“上传”可管理不同语系的展示图片。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>黑名单层级</strong></td>
+                        <td>限制特定黑名单层级的使用者参与。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>指定代理</strong></td>
+                        <td>针对特定代理人属下的使用者进行限制。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>到达人数＆中奖人数</strong></td>
+                        <td>统计参与活动的人数与获得奖励的人数。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>提现稽核流水比例</strong></td>
+                        <td>提现所需的打码倍数要求。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>稽核不通过手续费比例</strong></td>
+                        <td>当流水未达标时，提现扣除的手续费百分比。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>充值类型</strong></td>
+                        <td>点击展开，对于充值活动模板可以查看最低充值金额与次数。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>操作</strong></td>
+                        <td>包含：<strong>关闭/开启</strong>（切换展示状态）、<strong>复制</strong>（点击会复制这个模板的参数到一个新的活动模板中）、<strong>编辑</strong>（修改参数）、<strong>删除</strong>（永久移除纪录）。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="lang-content lang-en">
+        <h1>3. Activity List Description</h1>
+        <p>The list shows all created activities and supports the following operations:</p>
+        <div class="highlight-box">
+            <ul>
+                <li><strong>Status Check:</strong> Ongoing, Ended, Pending, Taken Down.</li>
+                <li><strong>Management:</strong> Edit, Clone, Export data.</li>
+                <li><strong>Quick Actions:</strong> Pin to top, Take down, Delete.</li>
+                <li><strong>Upload:</strong> Clicking "Upload" opens a side drawer for configuration.</li>
+                <li><strong>Deposit Template:</strong> Shows min deposit amount and frequency when clicked (Specific to
+                    deposit templates).</li>
+            </ul>
+        </div>
+        <div class="img-container">
+            <img src="../img/campain_list.jpg" alt="Activity List Interface">
+            <div class="img-caption">Preview of the Activity List Management Interface</div>
+        </div>
+
+        <h2 class="section-title">a. Operation Tips</h2>
+        <ul>
+            <li><strong>Click "Upload" button</strong>: Opens the side drawer for a configuration preview.
+                <div class="img-comparison-grid">
+                    <div class="img-container">
+                        <img src="../img/campain_list_img.jpg" alt="Upload Configuration">
+                        <div class="img-caption">Upload images or links for different positions and languages</div>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Click Deposit Type</strong>: Click to expand; for deposit activity templates, you can view the
+                minimum deposit amount and frequency.</li>
+        </ul>
+
+        <h2 class="section-title">1. Buttons</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Button</th>
+                        <th>Function Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>+ Add Activity</strong></td>
+                        <td>Opens the creation page to set up a new activity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Refresh</strong></td>
+                        <td>Reloads the current page data.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operations</strong></td>
+                        <td>Includes: <strong>Close/Open</strong> (toggle visibility), <strong>Copy</strong> (clicking
+                            will copy the parameters of this template into a new activity template),
+                            <strong>Edit</strong> (modify parameters), <strong>Delete</strong> (remove
+                            record).
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">2. Filter Column</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Filter Item</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Status</strong></td>
+                        <td>Filters activities by their current state (Active, Disabled).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Template</strong></td>
+                        <td>Filters by template type (e.g., Smash Egg, Deposit).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency</strong></td>
+                        <td>Filters by settlement currency.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Language</strong></td>
+                        <td>Filters by display language.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Activity ID</strong></td>
+                        <td>Search by specific ID for precise query.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Activity Name</strong></td>
+                        <td>Search by activity name keywords for fuzzy query.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Date Range</strong></td>
+                        <td>Filters by the activity's start and end dates.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reset</strong></td>
+                        <td>Clears all entered filter conditions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Query</strong></td>
+                        <td>Executes the search and updates the list.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">3. Table Columns</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Column Name</th>
+                        <th>Definition & Logic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ID</strong></td>
+                        <td>Unique identification number for the activity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sorting</strong></td>
+                        <td>Display priority of the activity on the front end.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Status</strong></td>
+                        <td>Shows whether the activity is currently enabled or disabled.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Template Type</strong></td>
+                        <td>Indicates if it is a system default or custom template.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Start/End Time</strong></td>
+                        <td>The effective period for the activity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency</strong></td>
+                        <td>The settlement currency applicable to the activity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Language</strong></td>
+                        <td>The display language used on the front end.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Activity Template</strong></td>
+                        <td>The name of the functional template applied.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Display Name</strong></td>
+                        <td>The title visible to users on the app or web page.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Preview Image</strong></td>
+                        <td>Click "Upload" to manage images for different languages.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blacklist Levels</strong></td>
+                        <td>Restrictions for specific blacklist user groups.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Designated Agents</strong></td>
+                        <td>Restrictions for users under specific agents.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Participants & Winners</strong></td>
+                        <td>Statistics on arrivals and prize winners.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Withdrawal Audit Turnover Ratio</strong></td>
+                        <td>The wagering requirement for withdrawals.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Audit Failed Fee Ratio</strong></td>
+                        <td>The fee percentage deducted if turnover is not met.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deposit Type</strong></td>
+                        <td>Click to expand; for deposit activity templates, you can view the minimum deposit amount and
+                            frequency.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operations</strong></td>
+                        <td>Quick action buttons like Edit, <strong>Copy</strong> (clicking will copy the parameters of
+                            this template into a new activity template), and Delete.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="lang-content lang-vn">
+        <h1>3. Mô tả danh sách hoạt động</h1>
+        <p>Danh sách hoạt động hiển thị tất cả các trạng thái hoạt động đã tạo, hỗ trợ các thao tác sau:</p>
+        <div class="highlight-box">
+            <ul>
+                <li><strong>Xem trạng thái:</strong> Đang diễn ra, Đã kết thúc, Chờ duyệt, Đã gỡ xuống.</li>
+                <li><strong>Quản lý nội dung:</strong> Chỉnh sửa, Sao chép, Xuất dữ liệu.</li>
+                <li><strong>Thao tác nhanh:</strong> Ghim lên đầu, Gỡ xuống, Xóa (chỉ áp dụng cho các hoạt động chưa bắt
+                    đầu hoặc đã kết thúc).</li>
+                <li><strong>Tải lên:</strong> Nhấp vào nút "Tải lên" để mở ngăn kéo bên phải cấu hình.</li>
+                <li><strong>Mẫu nạp tiền:</strong> Hiển thị số tiền nạp tối thiểu và số lần (Chỉ dành cho mẫu nạp tiền).
+                </li>
+            </ul>
+        </div>
+        <div class="img-container">
+            <img src="../img/campain_list.jpg" alt="Giao diện danh sách hoạt động">
+            <div class="img-caption">Bản xem trước giao diện quản lý danh sách hoạt động</div>
+        </div>
+
+        <h2 class="section-title">a. Gợi ý thao tác</h2>
+        <ul>
+            <li><strong>Nhấp vào nút "Tải lên"</strong>: Mở ngăn kéo bên phải để xem trước cấu hình.
+                <div class="img-comparison-grid">
+                    <div class="img-container">
+                        <img src="../img/campain_list_img.jpg" alt="Cấu hình tải lên">
+                        <div class="img-caption">Tải lên hình ảnh hoặc liên kết cho các vị trí và ngôn ngữ khác nhau
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Nhấp vào Loại nạp</strong>: Xem số tiền nạp tối thiểu và số lần (Chỉ dành cho mẫu nạp tiền).
+            </li>
+        </ul>
+
+        <h2 class="section-title">1. Các nút chức năng</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Nút</th>
+                        <th>Mô tả chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>+ Thêm hoạt động</strong></td>
+                        <td>Vào trang tạo mới để thiết lập một hoạt động mới.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Làm mới</strong></td>
+                        <td>Tải lại dữ liệu của trang hiện tại.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thao tác</strong></td>
+                        <td>Bao gồm: <strong>Đóng/Mở</strong> (chuyển đổi trạng thái hiển thị), <strong>Sao
+                                chép</strong> (nhấp vào sẽ sao chép các thông số của mẫu này sang một mẫu hoạt động
+                            mới), <strong>Chỉnh sửa</strong> (sửa đổi thông số),
+                            <strong>Xóa</strong> (xóa vĩnh viễn bản ghi).
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">2. Cột bộ lọc</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Mục lọc</th>
+                        <th>Mô tả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Trạng thái</strong></td>
+                        <td>Lọc hoạt động theo trạng thái hiện tại (Đang mở, Đã đóng).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mẫu hoạt động</strong></td>
+                        <td>Lọc theo loại mẫu (ví dụ: Đập trứng, Nạp tiền).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tiền tệ</strong></td>
+                        <td>Lọc theo loại tiền tệ quyết toán.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ngôn ngữ</strong></td>
+                        <td>Lọc theo ngôn ngữ hiển thị.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ID hoạt động</strong></td>
+                        <td>Tìm kiếm theo ID hoạt động cụ thể.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tên hoạt động</strong></td>
+                        <td>Tìm kiếm theo từ khóa tên hoạt động.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Khoảng ngày</strong></td>
+                        <td>Lọc theo ngày bắt đầu và kết thúc của hoạt động.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Đặt lại</strong></td>
+                        <td>Xóa tất cả các điều kiện lọc đã thiết lập.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Truy vấn</strong></td>
+                        <td>Thực hiện lọc và cập nhật danh sách.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">3. Các cột trong bảng</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Tên cột</th>
+                        <th>Định nghĩa & Logic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ID</strong></td>
+                        <td>Mã định danh duy nhất của hoạt động.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sắp xếp</strong></td>
+                        <td>Thứ tự ưu tiên hiển thị của hoạt động trên giao diện.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trạng thái</strong></td>
+                        <td>Hiển thị hoạt động đang được bật hay tắt.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại mẫu</strong></td>
+                        <td>Cho biết đó là mẫu hệ thống hay tùy chỉnh.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thời gian</strong></td>
+                        <td>Thời gian hiệu lực của hoạt động (Bắt đầu/Kết thúc).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tiền tệ</strong></td>
+                        <td>Loại tiền tệ quyết toán áp dụng cho hoạt động.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ngôn ngữ</strong></td>
+                        <td>Ngôn ngữ hiển thị trên giao diện người dùng.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mẫu hoạt động</strong></td>
+                        <td>Tên mẫu chức năng được áp dụng cho hoạt động.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tên hiển thị</strong></td>
+                        <td>Tiêu đề người dùng thấy trên App hoặc trang Web.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ảnh xem trước</strong></td>
+                        <td>Nhấp "Tải lên" để quản lý hình ảnh cho các ngôn ngữ khác nhau.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cấp độ danh sách đen</strong></td>
+                        <td>Hạn chế cho các nhóm người dùng trong danh sách đen cụ thể.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Đại lý chỉ định</strong></td>
+                        <td>Hạn chế cho người dùng thuộc các đại lý cụ thể.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Người tham gia & Người trúng thưởng</strong></td>
+                        <td>Thống kê số người tham gia và số người nhận thưởng.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tỷ lệ vòng cược kiểm toán rút tiền</strong></td>
+                        <td>Yêu cầu về vòng cược để có thể rút tiền.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tỷ lệ phí khi không đạt kiểm toán</strong></td>
+                        <td>Tỷ lệ phí khấu trừ nếu không đạt yêu cầu vòng cược.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại nạp</strong></td>
+                        <td>Nhấp để mở rộng; đối với các mẫu hoạt động nạp tiền, bạn có thể xem số tiền nạp tối thiểu và
+                            số lần.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thao tác</strong></td>
+                        <td>Các nút thao tác nhanh như Chỉnh sửa, <strong>Sao chép</strong> (nhấp vào sẽ sao chép các
+                            thông số của mẫu này sang một mẫu hoạt động mới) và Xóa.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/page-script.js"></script>
+</body>
+
+</html>
