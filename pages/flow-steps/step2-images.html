@@ -18,6 +18,36 @@
             <div class="img-caption">活动图片与语系配置界面预览</div>
         </div>
 
+        <h3 class="section-title">未选取的语系状态</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">编号</th>
+                        <th style="width: 150px;">项目名称</th>
+                        <th>内容说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>a.1</strong></td>
+                        <td><strong>活动分类展示与语系选择</strong></td>
+                        <td>非系统类型的模板会出现活动类型的选择；语系选择会出现前台不同语言的标题设定跟图片，出现区域如下方的图片（活动图片详情与描述配置界面（展开样式）预览）。</td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2</strong></td>
+                        <td><strong>排序</strong></td>
+                        <td>活动列表的排序顺序。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="img-container">
+            <img src="../../img/campain_img3.jpg" alt="活动图片展开界面">
+            <div class="img-caption">活动图片详情与描述配置界面（展开样式）预览</div>
+        </div>
+
         <h2 class="section-title">详细步骤说明</h2>
         <div class="table-container">
             <table>
@@ -35,67 +65,54 @@
                     <tr>
                         <td><strong>1.</strong></td>
                         <td><strong>活动类型设置</strong></td>
-                        <td>设定客户端活动列表分类（限“系统有专题页”顯示）、支持语系，並輸入各語系的<strong>活動標題</strong>。</td>
+                        <td>
+                            <strong>1-1. 活动类型：</strong>设定客户端活动列表分类（仅当选择“系统有专题页”时显示）。<br>
+                            <strong>1-2. 活动语系：</strong>设置活动内容与图片支持展示的语系。
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>2.</strong></td>
-                        <td><strong>语系 Tab 切换</strong></td>
-                        <td>在不同語系分頁間切換，以便上傳該語系專屬的圖片與內容素材。</td>
+                        <td><strong>排序</strong></td>
+                        <td><strong>2-1. Banner 排序：</strong>定义活动在客户端列表中的显示顺序（数字越小越靠前）。</td>
                     </tr>
                     <tr>
                         <td><strong>3.</strong></td>
-                        <td><strong>排序</strong></td>
-                        <td>定義活動在客戶端列表中的顯示順序（數字越小越靠前）。</td>
+                        <td><strong>语系设定</strong></td>
+                        <td>
+                            <strong>3-1. 语系复选：</strong>根据支持语系进行勾选，勾选后会出现对应的编辑区。<br>
+                            <strong>3-2. 活动标题：</strong>输入各语系的活动名称。<br>
+                            <strong>3-3. 语系 Tab 切换：</strong>在不同语系分面间切换，以上传专属素材。
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>4.</strong></td>
-                        <td><strong>列表图片</strong></td>
-                        <td>上傳 PC、H5、APP 端所需的列表 Banner 素材，並設定<strong>跳轉類型</strong>（如：不跳轉、跳轉至指定活動）。</td>
+                        <td><strong>活动图片上传</strong></td>
+                        <td>
+                            <strong>4-1. 图片素材：</strong>上传 PC、H5、APP 端所需的列表 Banner 素材。<br>
+                            <strong>4-2. 跳转类型：</strong>设定点击图片后的跳转行为（如：不跳转、特定活动）。<br>
+                            <strong>4-3. 充值内容图片：</strong>针对充值类活动上传专用素材<strong>（仅活动模板显示）</strong>。
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>5.</strong></td>
-                        <td><strong>内容图片</strong></td>
-                        <td>上傳顯示於活動詳情頁面內的所有介紹性圖片素材。</td>
+                        <td><strong>活动描述</strong></td>
+                        <td><strong>5-1. 活动内容：</strong>使用富文本编辑器填写活动详细规则、介绍或奖励说明。</td>
                     </tr>
                     <tr>
                         <td><strong>6.</strong></td>
-                        <td><strong>充值内容图片</strong></td>
-                        <td>針對「充值類」活動，上傳顯示於充值頁面內的相關素材圖片。<br><strong>(僅活動模板才會出現該上傳區塊)</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>7.</strong></td>
-                        <td><strong>活动描述</strong></td>
-                        <td>使用富文本編輯器填寫活動的詳細規則、介紹或獎勵具體說明。</td>
-                    </tr>
-                    <tr>
-                        <td><strong>8.</strong></td>
                         <td><strong>备注</strong></td>
-                        <td>填寫僅供後端營運人員查看的內部備忘資訊。</td>
+                        <td><strong>6-1. 备注内容：</strong>填寫僅供後端營運人員查看的內部備忘資訊。</td>
                     </tr>
                     <tr class="section-header" style="background-color: #f0fdf4;">
                         <td colspan="3"><strong>Part 2: 前端展示预览 (Frontend Display)</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>a.1</strong></td>
-                        <td><strong>活动分类展示</strong></td>
-                        <td>1 配置的活動類型在客戶端的標籤頁/篩選器的呈現位置。</td>
-                    </tr>
-                    <tr>
-                        <td><strong>a.2</strong></td>
-                        <td><strong>活动列表展示</strong></td>
-                        <td>4 上傳的 Banner 圖片在活動中心列表的實際顯示效果。</td>
-                    </tr>
-                    <tr>
                         <td><strong>a.3</strong></td>
-                        <td><strong>充值頁面的圖片展示</strong></td>
-                        <td>5, 6, 7 配置的細節圖片、充值素材與文字描述在點擊彈窗或詳情頁的綜合呈現。</td>
+                        <td><strong>详情与充值展示</strong></td>
+                        <td>4-3, 5-1 配置的细节图片、素材与文字描述在详情页的综合呈现。</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="img-container">
-            <img src="../../img/campain_img3.jpg" alt="活动图片展开界面">
-            <div class="img-caption">活动图片详情与描述配置界面（展开样式）预览</div>
         </div>
     </div>
 
@@ -108,6 +125,38 @@
         <div class="img-container">
             <img src="../../img/campain_img2.jpg" alt="Activity Images Interface">
             <div class="img-caption">Activity Images and Language Configuration Preview</div>
+        </div>
+
+        <h3 class="section-title">Unselected Language Status</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">No.</th>
+                        <th style="width: 150px;">Item Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>a.1</strong></td>
+                        <td><strong>Category and Language Selection</strong></td>
+                        <td>Non-system templates display activity type selection; language selection reveals localized
+                            titles and images, configured in the area shown in the image below (Expanded Interface).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2</strong></td>
+                        <td><strong>Sorting</strong></td>
+                        <td>The sorting order of the activity list.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="img-container">
+            <img src="../../img/campain_img3.jpg" alt="Activity Images Expanded Interface">
+            <div class="img-caption">Preview of the Expanded Activity Images and Description Configuration</div>
         </div>
 
         <h2 class="section-title">Detailed Step Description</h2>
@@ -126,72 +175,60 @@
                     </tr>
                     <tr>
                         <td><strong>1.</strong></td>
-                        <td><strong>Activity Type</strong></td>
-                        <td>Set category for activity list (System Feature Page only), supported languages, and
-                            <strong>Activity Titles</strong>.
+                        <td><strong>Activity Type Settings</strong></td>
+                        <td>
+                            <strong>1-1. Activity Type:</strong> Set category for activity list (System Feature Page
+                            only).<br>
+                            <strong>1-2. Languages:</strong> Set supported languages for content and images.
                         </td>
                     </tr>
                     <tr>
                         <td><strong>2.</strong></td>
-                        <td><strong>Language Tab</strong></td>
-                        <td>Switch between language tabs to configure localized images and assets.</td>
+                        <td><strong>Sorting</strong></td>
+                        <td><strong>2-1. Banner Sorting:</strong> Defines display order in the app list (smaller numbers
+                            first).</td>
                     </tr>
                     <tr>
                         <td><strong>3.</strong></td>
-                        <td><strong>Sorting</strong></td>
-                        <td>Defines display order in the app list (smaller numbers appear first).</td>
+                        <td><strong>Language Settings</strong></td>
+                        <td>
+                            <strong>3-1. Selection:</strong> Select supported languages to enable localized editing.<br>
+                            <strong>3-2. Titles:</strong> Enter activity names for each language.<br>
+                            <strong>3-3. Language Tab:</strong> Switch between tabs to configure localized assets.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>4.</strong></td>
-                        <td><strong>List Images</strong></td>
-                        <td>Upload PC, H5, and APP list banners and set the <strong>Jump Type</strong> (e.g., No Jump,
-                            Link to Activity).</td>
+                        <td><strong>Image Upload</strong></td>
+                        <td>
+                            <strong>4-1. Image Assets:</strong> Upload banners for PC, H5, and APP.<br>
+                            <strong>4-2. Jump Type:</strong> Set action when clicking the image (e.g., No Jump, specific
+                            activity).<br>
+                            <strong>4-3. Top-up Assets:</strong> Assets for recharge pages <strong>(Activity Templates
+                                only)</strong>.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>5.</strong></td>
-                        <td><strong>Content Images</strong></td>
-                        <td>Upload all descriptive images displayed in the activity detail page.</td>
+                        <td><strong>Activity Description</strong></td>
+                        <td><strong>5-1. Content:</strong> Use rich text editor for rules, introduction, or rewards.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>6.</strong></td>
-                        <td><strong>Top-up Assets</strong></td>
-                        <td>For Top-up activities, upload assets specific to the recharge/deposit page.
-                            <br><strong>(Note: This upload block only appears for activity templates)</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>7.</strong></td>
-                        <td><strong>Description</strong></td>
-                        <td>Use rich text editor for detailed rules, introduction, or reward specifics.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>8.</strong></td>
                         <td><strong>Remarks</strong></td>
-                        <td>Internal-only notes for administrative reference.</td>
+                        <td><strong>6-1. Internal Notes:</strong> Private notes for administrative reference.</td>
                     </tr>
                     <tr class="section-header" style="background-color: #f0fdf4;">
                         <td colspan="3"><strong>Part 2: Frontend Display</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>a.1</strong></td>
-                        <td><strong>Category</strong></td>
-                        <td>Placement of the category/filter tab configured in 1 on the client side.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>a.2</strong></td>
-                        <td><strong>Listing</strong></td>
-                        <td>The actual display effect of the 4 banners in the client activity center.</td>
-                    </tr>
-                    <tr>
                         <td><strong>a.3</strong></td>
-                        <td><strong>Recharge Page Display</strong></td>
-                        <td>Comprehensive presentation of 5, 6, and 7 assets in popups or detail pages.</td>
+                        <td><strong>Detail & Recharge</strong></td>
+                        <td>Display of 4-3, 5-1 assets in popups or detail pages.</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="img-container">
-            <img src="../../img/campain_img3.jpg" alt="Activity Images Expanded Interface">
-            <div class="img-caption">Preview of the Expanded Activity Images and Description Configuration</div>
         </div>
     </div>
 
@@ -203,6 +240,38 @@
         <div class="img-container">
             <img src="../../img/campain_img2.jpg" alt="Giao diện hình ảnh hoạt động">
             <div class="img-caption">Bản xem trước cấu hình hình ảnh và ngôn ngữ</div>
+        </div>
+
+        <h3 class="section-title">Trạng thái ngôn ngữ chưa chọn</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">STT</th>
+                        <th style="width: 150px;">Tên mục</th>
+                        <th>Mô tả nội dung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>a.1</strong></td>
+                        <td><strong>Phân loại và chọn ngôn ngữ</strong></td>
+                        <td>Các mẫu không thuộc hệ thống sẽ hiển thị chọn loại hoạt động; chọn ngôn ngữ sẽ hiển thị tiêu
+                            đề và hình ảnh cho từng ngôn ngữ, khu vực cấu hình như trong hình bên dưới (Giao diện mở
+                            rộng).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>a.2</strong></td>
+                        <td><strong>Sắp xếp</strong></td>
+                        <td>Thứ tự sắp xếp của danh sách hoạt động.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="img-container">
+            <img src="../../img/campain_img3.jpg" alt="Giao diện hình ảnh hoạt động mở rộng">
+            <div class="img-caption">Bản xem trước cấu hình chi tiết hình ảnh và mô tả (kiểu mở rộng)</div>
         </div>
 
         <h2 class="section-title">Mô tả chi tiết các bước</h2>
@@ -221,71 +290,62 @@
                     </tr>
                     <tr>
                         <td><strong>1.</strong></td>
-                        <td><strong>Thiết lập loại</strong></td>
-                        <td>Đặt danh mục danh sách (chỉ dành cho trang chuyên đề), ngôn ngữ hỗ trợ và <strong>Tiêu đề
-                                hoạt động</strong>.</td>
+                        <td><strong>Thiết lập loại hoạt động</strong></td>
+                        <td>
+                            <strong>1-1. Loại hoạt động:</strong> Đặt danh mục danh sách (chỉ khi chọn "Trang chuyên đề
+                            hệ thống").<br>
+                            <strong>1-2. Ngôn ngữ hỗ trợ:</strong> Các ngôn ngữ được hỗ trợ cho nội dung và hình ảnh.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>2.</strong></td>
-                        <td><strong>Tab ngôn ngữ</strong></td>
-                        <td>Chuyển đổi giữa các tab ngôn ngữ để cấu hình hình ảnh và nội dung cục bộ.</td>
+                        <td><strong>Sắp xếp</strong></td>
+                        <td><strong>2-1. Sắp xếp Banner:</strong> Thứ tự hiển thị trong danh sách ứng dụng (số nhỏ hơn
+                            hiển thị trước).</td>
                     </tr>
                     <tr>
                         <td><strong>3.</strong></td>
-                        <td><strong>Sắp xếp</strong></td>
-                        <td>Thứ tự hiển thị trong danh sách ứng dụng (số nhỏ hơn hiển thị trước).</td>
+                        <td><strong>Thiết lập ngôn ngữ</strong></td>
+                        <td>
+                            <strong>3-1. Lựa chọn ngôn ngữ:</strong> Chọn ngôn ngữ được hỗ trợ; các cài đặt hình ảnh/nội
+                            dung sẽ xuất hiện tương ứng.<br>
+                            <strong>3-2. Tiêu đề hoạt động:</strong> Nhập tiêu đề cho các ngôn ngữ khác nhau.<br>
+                            <strong>3-3. Tab ngôn ngữ:</strong> Chuyển đổi giữa các tab để tải lên hình ảnh và nội dung
+                            cục bộ.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>4.</strong></td>
-                        <td><strong>Ảnh danh sách</strong></td>
-                        <td>Tải lên Banner cho PC, H5, APP và đặt <strong>Loại nhảy</strong> (ví dụ: Không nhảy, Liên
-                            kết hoạt động).</td>
+                        <td><strong>Tải lên hình ảnh</strong></td>
+                        <td>
+                            <strong>4-1. Tài nguyên:</strong> Tải lên banner cho PC, H5 và APP.<br>
+                            <strong>4-2. Loại nhảy:</strong> Cài đặt hành vi khi nhấp vào ảnh (ví dụ: Không nhảy, hoạt
+                            động cụ thể).<br>
+                            <strong>4-3. Tài nguyên nạp tiền:</strong> Tài nguyên cho trang nạp tiền <strong>(Chỉ dành
+                                cho Mẫu hoạt động)</strong>.
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>5.</strong></td>
-                        <td><strong>Ảnh nội dung</strong></td>
-                        <td>Tải lên tất cả hình ảnh mô tả hiển thị trong trang chi tiết hoạt động.</td>
+                        <td><strong>Mô tả hoạt động</strong></td>
+                        <td><strong>5-1. Nội dung:</strong> Sử dụng trình soạn thảo văn bản cho các quy tắc, giới thiệu
+                            hoặc phần thưởng.</td>
                     </tr>
                     <tr>
                         <td><strong>6.</strong></td>
-                        <td><strong>Tài nguyên nạp tiền</strong></td>
-                        <td>Đối với hoạt động nạp tiền, tải lên tài nguyên hiển thị trong trang nạp tiền.
-                            <br><strong>(Lưu ý: Khối tải lên này chỉ xuất hiện cho các mẫu hoạt động)</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>7.</strong></td>
-                        <td><strong>Mô tả</strong></td>
-                        <td>Sử dụng trình soạn thảo văn bản cho các quy tắc chi tiết, giới thiệu hoặc phần thưởng.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>8.</strong></td>
                         <td><strong>Ghi chú</strong></td>
-                        <td>Ghi chú nội bộ dành cho quản trị viên.</td>
+                        <td><strong>6-1. Ghi chú nội bộ:</strong> Ghi chú dành cho quản trị viên tham khảo.</td>
                     </tr>
                     <tr class="section-header" style="background-color: #f0fdf4;">
                         <td colspan="3"><strong>Phần 2: Hiển thị Frontend</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>a.1</strong></td>
-                        <td><strong>Phân loại</strong></td>
-                        <td>Vị trí hiển thị của tab phân loại đã cấu hình ở 1 trên giao diện người dùng.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>a.2</strong></td>
-                        <td><strong>Danh sách</strong></td>
-                        <td>Hiệu ứng hiển thị thực tế của Banner 4 trong danh sách hoạt động.</td>
-                    </tr>
-                    <tr>
                         <td><strong>a.3</strong></td>
-                        <td><strong>Hiển thị trang nạp tiền</strong></td>
-                        <td>Hiển thị tổng hợp của 5, 6 và 7 trong cửa sổ bật lên hoặc trang chi tiết.</td>
+                        <td><strong>Chi tiết & Nạp tiền</strong></td>
+                        <td>Hiển thị tổng hợp của 4-3, 5-1 trong cửa sổ bật lên hoặc trang chi tiết.</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="img-container">
-            <img src="../../img/campain_img3.jpg" alt="Giao diện hình ảnh hoạt động mở rộng">
-            <div class="img-caption">Bản xem trước cấu hình chi tiết hình ảnh và mô tả (kiểu mở rộng)</div>
         </div>
     </div>
     <script src="../../js/page-script.js"></script>
